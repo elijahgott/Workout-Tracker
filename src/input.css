@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* define own css classes */
+.radial-blue{
+    background: radial-gradient(lightyellow, skyblue);
+}
