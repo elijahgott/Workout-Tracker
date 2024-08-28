@@ -10,21 +10,37 @@
 <body class="min-h-screen bg-neutral-300">
     <header>
         <nav class="flex h-16 w-screen bg-neutral-700 items-center">
-            <div class="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8 ">
+            <div class="w-fit ml-[5%] px-2 sm:px-6 lg:px-8 "> <!-- left group of nav links -->
                 <div class="flex space-x-4">
-                    <div class="h-9">
-                        <div class="grid place-content-center h-9 w-9 bg-red-500 rounded-full">
-                            <div class="h-6 w-6 bg-neutral-700 rounded-full"></div>
-                        </div>
+                    <div class="my-auto h-9">
+                        <div class="grid place-content-center h-10 w-10 bg-red-500 rounded-full"><div class="h-8 w-8 bg-neutral-700 rounded-full"></div></div> <!-- logo placeholder -->
                     </div>
-                    <a href="#home" class="rounded-md bg-teal-600 px-3 py-2 text-sm font-medium text-gray-100 hover:bg-teal-500 hover:text-white" aria-current="page">Home</a>
-                    <a href="#link1" class="rounded-md bg-teal-600 px-3 py-2 text-sm font-medium text-gray-100 hover:bg-teal-500 hover:text-white">Link 1</a>
+                    <a href="#home" class="px-3 py-2 text-lg font-medium text-gray-100
+                    hover:bg-teal-300 hover:rounded-md hover:text-white hover:transition" aria-current="page">Home</a>
                 </div>
             </div>
+            <div class="flex w-fit mr-[5%] ml-auto"> <!-- right group of nav links -->
+                <a href="#profile"><div class="h-10 w-10 bg-red-500 rounded-full"></div></a>
+            </div>
+
         </nav>
     </header>
-    <div class="bg-white max-w-screen-xl min-h-screen mx-auto">
-        
+    <div class="bg-white max-w-screen-2xl min-h-screen mx-auto my-0 pt-5"> <!-- main content background -->
+        <div class="flex items-center h-[25vh] mx-6 mb-6 rounded-md bg-neutral-200 shadow-lg shadow-neutral-300 "> <!-- weekly calendar -->
+            <h1 class="mx-auto text-3xl font-bold text-gray-700">X Workout Week!</h1>
+            <div class="w-1 h-44 bg-neutral-400"></div>
+        </div> 
+        <div class="flex h-[40vh] mx-6 rounded-md bg-neutral-200 shadow-inner shadow-neutral-300"> <!-- weekly breakdown -->
+            <div class="h-fit mx-6 my-auto">
+                <p class="py-4 text-2xl font-medium text-gray-700">Sunday - </p>
+                <p class="py-4 text-2xl font-medium text-gray-700">Monday - </p>
+                <p class="py-4 text-2xl font-medium text-gray-700">Tuesday - </p>
+                <p class="py-4 text-2xl font-medium text-gray-700">Wednesday - </p>
+                <p class="py-4 text-2xl font-medium text-gray-700">Thursday - </p>
+                <p class="py-4 text-2xl font-medium text-gray-700">Friday - </p>
+                <p class="py-4 text-2xl font-medium text-gray-700">Saturday - </p>
+            </div>    
+        </div>
     </div>
    
 </body>
