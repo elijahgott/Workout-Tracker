@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Tracker</title>
+    <title>Simple Workout Tracker (SWT)</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/favicon.ico">
 </head>
 <!-- bg-teal-200 nice color for background bossble -->
-<body class="min-h-screen bg-neutral-300">
+<body class="min-h-screen w-dvw bg-neutral-300">
     <header>
         <nav class="flex h-16 w-screen bg-neutral-700 items-center">
             <div class="w-fit ml-[5%] px-2 sm:px-6 lg:px-8 "> <!-- left group of nav links -->
@@ -20,15 +21,25 @@
                 </div>
             </div>
             <div class="flex w-fit mr-[5%] ml-auto"> <!-- right group of nav links -->
-                <a href="#profile"><div class="h-10 w-10 bg-red-500 rounded-full"></div></a>
+                <a href="#profile"><div class="h-10 w-10 bg-red-500 rounded-full
+                    hover:border-solid hover:border-2 hover:border-white hover:transition"></div></a> <!-- profile button -->
             </div>
 
         </nav>
     </header>
-    <div class="bg-white max-w-screen-2xl min-h-screen mx-auto my-0 pt-5"> <!-- main content background -->
-        <div class="flex items-center h-[25vh] mx-6 mb-6 rounded-md bg-neutral-200 shadow-lg shadow-neutral-300 "> <!-- weekly calendar -->
-            <h1 class="mx-auto text-3xl font-bold text-gray-700">X Workout Week!</h1>
-            <div class="w-1 h-44 bg-neutral-400"></div>
+    <div class="bg-white max-w-screen-2xl min-h-screen mx-auto my-0 pt-5 drop-shadow-2xl shadow-black"> <!-- main content background -->
+        <div class="grid h-[25vh] mx-6 mb-6 rounded-md bg-neutral-200 shadow-lg shadow-neutral-300 "> <!-- weekly calendar -->
+            <h1 class="mx-auto my-4 text-3xl font-bold text-gray-700">X Workout Week!</h1>
+            <div class="grid grid-cols-7"> <!-- container for days with bubbles n stuff -->
+                <div class="w-1 h-44 bg-neutral-400">1</div>
+                <div class="w-1 h-44 bg-neutral-400">2</div>
+                <div class="w-1 h-44 bg-neutral-400">3</div>
+                <div class="w-1 h-44 bg-neutral-400">4</div>
+                <div class="w-1 h-44 bg-neutral-400">5</div>
+                <div class="w-1 h-44 bg-neutral-400">6</div>
+                <div class="w-1 h-44 bg-neutral-400">7</div>
+            </div>
+            
         </div> 
         <div class="flex h-[40vh] mx-6 rounded-md bg-neutral-200 shadow-inner shadow-neutral-300"> <!-- weekly breakdown -->
             <div class="h-fit mx-6 my-auto">
