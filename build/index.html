@@ -8,12 +8,14 @@
     <link rel="icon" href="/favicon.ico">
 </head>
 <!-- bg-teal-200 nice color for background bossble -->
-<body class="min-h-svh w-svw bg-neutral-300">
+<body class="min-h-dvh bg-neutral-300"> <!-- light gray background -->
     <header>
-        <div class="w-svh h-16 bg-neutral-700 ">
-            <nav class="max-w-screen-2xl mx-auto flex h-16 w-screen bg-neutral-700 items-center">
-                <div class=""> <!-- left group of nav links -->
-                    <div class="flex space-x-4">
+        <div class="w-auto h-16 bg-neutral-700 ">
+            <nav class="max-w-screen-2xl mx-auto flex h-16 w-auto bg-neutral-700 items-center">
+                <div class="ml-4
+                lg:ml-0"> <!-- left group of nav links -->
+                    <div class="flex space-x-2
+                    lg:space-x-4">
                         <div class="my-auto h-9">
                             <div class="grid place-content-center h-10 w-10 bg-red-500 rounded-full"><div class="h-8 w-8 bg-neutral-700 rounded-full"></div></div> <!-- logo placeholder -->
                         </div>
@@ -23,7 +25,8 @@
                         hover:bg-teal-300 hover:rounded-md hover:text-white hover:transition" aria-current="page">Another Link</a>
                     </div>
                 </div>
-                <div class="flex w-fit ml-auto"> <!-- right group of nav links -->
+                <div class="flex w-fit ml-auto mr-4
+                lg:mr-0"> <!-- right group of nav links -->
                     <a href="#profile"><div class="h-10 w-10 bg-red-500 rounded-full
                         hover:border-solid hover:border-2 hover:border-white hover:transition"></div></a> <!-- profile button -->
                 </div>
@@ -31,93 +34,106 @@
         </div>
     </header>
 
-    <div class="bg-white max-w-screen-2xl min-h-screen mx-auto my-0 pt-5 drop-shadow-2xl shadow-black"> <!-- main content background -->
+    <div class="bg-white max-w-max min-h-screen mx-auto my-0 drop-shadow-2xl shadow-black
+    xl:max-w-screen-2xl"> <!-- main content background -->
+        <div class="flex w-full py-2">
+            <button class="bg-teal-300 mx-auto p-2 rounded-lg font-bold text-white shadow-md shadow-neutral-300">Add Workout</button>
+        </div>
         <div class="grid h-fit px-4 mx-6 mb-6 rounded-md bg-neutral-200 shadow-lg shadow-neutral-300 "> <!-- weekly calendar -->
-            <h1 class="mx-auto my-4 text-3xl font-bold text-gray-700">(x) Workout Week!</h1>
-            <div class="grid grid-cols-7 items-center py-4"> <!-- container for days with bubbles n stuff -->
-                <div class="flex items-center mx-auto w-fit h-fit"> <!-- section for day of week -->
-                    <div class="flex items-center h-24 w-24 mx-auto bg-red-500 rounded-full
+            <h1 class="mx-auto mt-4 text-xl font-bold text-gray-700
+            lg:text-3xl">Weekly Summary</h1>
+            <div class="grid grid-cols-7 items-center py-2
+            lg:py-4"> <!-- container for days with bubbles n stuff -->
+                <div class="flex items-center mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
+                    <div class="flex items-center h-12 w-12 mx-auto bg-red-500 rounded-full
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-16 w-16 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
                         lg:h-24 lg:w-24"> <!-- inner circle -->
-                            <h1 class="mx-auto text-lg font-bold
+                            <h1 class="mx-auto text-sm font-bold
                             lg:text-2xl">Sun</h1>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center mx-auto w-fit h-fit"> <!-- section for day of week -->
-                    <div class="flex items-center h-24 w-24 mx-auto bg-red-500 rounded-full
+                <div class="flex items-center mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
+                    <div class="flex items-center h-12 w-12 mx-auto bg-red-500 rounded-full
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-16 w-16 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
                         lg:h-24 lg:w-24"> <!-- inner circle -->
-                            <h1 class="mx-auto text-lg font-bold
+                            <h1 class="mx-auto text-sm font-bold
                             lg:text-2xl">Mon</h1>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center mx-auto w-fit h-fit"> <!-- section for day of week -->
-                    <div class="flex items-center h-24 w-24 mx-auto bg-red-500 rounded-full
+                <div class="flex items-center mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
+                    <div class="flex items-center h-12 w-12 mx-auto bg-red-500 rounded-full
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-16 w-16 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
                         lg:h-24 lg:w-24"> <!-- inner circle -->
-                            <h1 class="mx-auto text-lg font-bold
+                            <h1 class="mx-auto text-sm font-bold
                             lg:text-2xl">Tue</h1>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center mx-auto w-fit h-fit"> <!-- section for day of week -->
-                    <div class="flex items-center h-24 w-24 mx-auto bg-red-500 rounded-full
+                <div class="flex items-center mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
+                    <div class="flex items-center h-12 w-12 mx-auto bg-red-500 rounded-full
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-16 w-16 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
                         lg:h-24 lg:w-24"> <!-- inner circle -->
-                            <h1 class="mx-auto text-lg font-bold
+                            <h1 class="mx-auto text-sm font-bold
                             lg:text-2xl">Wed</h1>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center mx-auto w-fit h-fit"> <!-- section for day of week -->
-                    <div class="flex items-center h-24 w-24 mx-auto bg-red-500 rounded-full
+                <div class="flex items-center mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
+                    <div class="flex items-center h-12 w-12 mx-auto bg-red-500 rounded-full
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-16 w-16 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
                         lg:h-24 lg:w-24"> <!-- inner circle -->
-                            <h1 class="mx-auto text-lg font-bold
-                            lg:text-2xl">Thurs</h1>
+                            <h1 class="mx-auto text-sm font-bold
+                            lg:text-2xl">Thu</h1>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center mx-auto w-fit h-fit"> <!-- section for day of week -->
-                    <div class="flex items-center h-24 w-24 mx-auto bg-red-500 rounded-full
+                <div class="flex items-center mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
+                    <div class="flex items-center h-12 w-12 mx-auto bg-red-500 rounded-full
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-16 w-16 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
                         lg:h-24 lg:w-24"> <!-- inner circle -->
-                            <h1 class="mx-auto text-lg font-bold
+                            <h1 class="mx-auto text-sm font-bold
                             lg:text-2xl">Fri</h1>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center mx-auto w-fit h-fit"> <!-- section for day of week -->
-                    <div class="flex items-center h-24 w-24 mx-auto bg-red-500 rounded-full
+                <div class="flex items-center mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
+                    <div class="flex items-center h-12 w-12 mx-auto bg-red-500 rounded-full
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-16 w-16 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
                         lg:h-24 lg:w-24"> <!-- inner circle -->
-                            <h1 class="mx-auto text-lg font-bold
+                            <h1 class="mx-auto text-sm font-bold
                             lg:text-2xl">Sat</h1>
                         </div>
                     </div>
                 </div>
-                
             </div>
-            
+            <h1 class="mx-auto mt-0 mb-4 text-md font-bold text-gray-600
+                lg:text-xl">(X) Workout Week!</h1>
         </div> 
         <div class="flex h-fit mx-6 rounded-md bg-neutral-200 shadow-inner shadow-neutral-300"> <!-- weekly breakdown -->
             <div class="h-fit mx-6 my-auto">
-                <p class="py-4 text-2xl font-medium text-gray-700">Sunday - </p>
-                <p class="py-4 text-2xl font-medium text-gray-700">Monday - </p>
-                <p class="py-4 text-2xl font-medium text-gray-700">Tuesday - </p>
-                <p class="py-4 text-2xl font-medium text-gray-700">Wednesday - </p>
-                <p class="py-4 text-2xl font-medium text-gray-700">Thursday - </p>
-                <p class="py-4 text-2xl font-medium text-gray-700">Friday - </p>
-                <p class="py-4 text-2xl font-medium text-gray-700">Saturday - </p>
+                <p class="py-4 text-lg font-medium text-gray-700
+                lg:text-2xl">Sunday - Push</p>
+                <p class="py-4 text-lg font-medium text-gray-700
+                lg:text-2xl">Monday - Pull</p>
+                <p class="py-4 text-lg font-medium text-gray-700
+                lg:text-2xl">Tuesday - Legs</p>
+                <p class="py-4 text-lg font-medium text-gray-700
+                lg:text-2xl">Wednesday - Rest</p>
+                <p class="py-4 text-lg font-medium text-gray-700
+                lg:text-2xl">Thursday - Push</p>
+                <p class="py-4 text-lg font-medium text-gray-700
+                lg:text-2xl">Friday - Pull</p>
+                <p class="py-4 text-lg font-medium text-gray-700
+                lg:text-2xl">Saturday - Legs</p>
             </div>    
         </div>
     </div>
