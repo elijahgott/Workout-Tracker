@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./build/*.html'],
+  content: [
+    './build/*.html',
+    './build/workouts/*.html'],
   theme: {
     extend: {
       keyframes: {
