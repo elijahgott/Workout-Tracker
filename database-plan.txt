@@ -1,0 +1,25 @@
+Collections
+    1) Users
+        - Name
+        - Password hash(?)
+        - Email
+        - Workouts
+            - Name
+            - Sets
+            - Reps
+            - Weight
+
+    2) Exercises
+        - Name
+        - Sets
+        - Reps
+        - Weight
+
+    3) Workouts
+        - Name
+        - Multiple Exercises
+        - Day(s)(?)
+
+    4) Schedule(?)
+        - Day
+        - Workout
