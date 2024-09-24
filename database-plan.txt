@@ -9,17 +9,15 @@ Collections
             - Reps
             - Weight
 
-    2) Exercises
+    2) Workouts
         - Name
-        - Sets
-        - Reps
-        - Weight
-
-    3) Workouts
-        - Name
-        - Multiple Exercises
+        - Exercises
+            - Name
+            - Sets
+            - Reps
+            - Weight
         - Day(s)(?)
 
-    4) Schedule(?)
-        - Day
-        - Workout
+    3) Completed Workouts
+        - Date completed
+        - Workout type

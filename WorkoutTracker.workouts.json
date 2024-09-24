@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "66f336791e2fe4b34d6f81a1"
+  },
+  "name": "Push Day",
+  "exercises": [
+    {
+      "name": "Bench Press",
+      "sets": 5,
+      "reps": 5,
+      "weight": 150
+    },
+    {
+      "name": "Triceps Extension",
+      "sets": 3,
+      "reps": 15,
+      "weight": 60
+    }
+  ],
+  "days": [
+    "Monday",
+    "Thursday"
+  ]
+}]
