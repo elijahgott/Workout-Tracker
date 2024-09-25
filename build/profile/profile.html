@@ -29,14 +29,14 @@
                         <div class="hidden lg:flex"> <!-- regular nav -->
                             <a href="../index.html" class="px-3 py-2 text-lg font-medium text-gray-100
                              hover:bg-teal-300 hover:rounded-md hover:text-white hover:transition" aria-current="page">Home</a>
-                            <a href="./myworkouts.html" class="px-3 py-2 text-lg font-medium text-gray-100
+                            <a href="../workouts/myworkouts.html" class="px-3 py-2 text-lg font-medium text-gray-100
                              hover:bg-teal-300 hover:rounded-md hover:text-white hover:transition" aria-current="page">My Workouts</a>
                         </div>
                     </div>
                 </div>
                 <div class="flex w-fit ml-auto mr-4
                 lg:mr-0"> <!-- right group of nav links -->
-                    <a href="../profile/profile.html"><div class="h-10 w-10 bg-red-500 rounded-full
+                    <a href="./profile.html"><div class="h-10 w-10 bg-red-500 rounded-full
                         hover:border-solid hover:border-2 hover:border-white hover:transition"></div></a> <!-- profile button -->
                 </div>
             </nav>
@@ -45,36 +45,22 @@
         <div id="mobile-nav" class="absolute -translate-x-full z-10 bg-neutral-700 h-dvh w-2/5 transition-all duration-1000 lg:hidden">
             <a href="../index.html" class="block text-lg font-medium text-gray-100 py-4
             hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Home</p></a>
-            <a href="./myworkouts.html" class="block text-lg font-medium text-gray-100 py-4
+            <a href="../workouts/myworkouts.html" class="block text-lg font-medium text-gray-100 py-4
             hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Workouts</p></a>
         </div>
     </header>
 
     <div class="bg-white max-w-screen-xl h-dvh mx-auto my-0 pt-4 drop-shadow-2xl shadow-black"> <!-- main content background -->
-        <!-- workout schedule -->
-        <div class="grid h-fit px-4 mx-4 mb-4 rounded-md bg-neutral-200 shadow-lg shadow-neutral-300">
-            <h1 class="mx-auto mt-4 text-xl font-bold text-gray-700
-            lg:text-3xl">Workout Schedule</h1>
-            <div class="grid grid-cols-7 items-center py-2
-            lg:py-4"> <!-- container for days -->
-                <div class="mx-auto w-fit h-fit border border-transparent"> <!-- section for day of week -->
-                    <div class="h-fit w-fit
-                    lg:h-32 lg:w-32">
-                        <h1 class="text-md font-bold text-center
-                        lg:text-lg">Sun</h1>
-                        <button class="bg-white mx-auto p-2 rounded-lg text-xs font-medium text-black border border-black
-                        lg:p-2 lg:text-md hover:bg-neutral-300 hover:transition" onclick="selectWorkout()">Select Workout MAKE DROPDOWN</button>
-                    </div>
-                </div>
-            </div>
+        <div class="flex w-3/4 mt-4 mx-40">
+            <img src="../../bowser.JPG" class="w-50 h-50 rounded-full shadow-lg shadow-neutral-300"/>
+            <h1 class="text-7xl font-extrabold mx-8 my-auto">Name</h1>
         </div>
-        <!-- workout button -->
-        <div class="flex w-full mb-4">
-            <button class="bg-teal-300 mx-auto p-2 rounded-lg font-bold text-white shadow-md shadow-neutral-300
-            lg:p-4 lg:text-lg hover:bg-teal-500 hover:transition" data="workoutList" onclick="addWorkout()">Add Workout</button>
-        </div>
+
         <!-- workouts section -->
-        <div class="grid grid-cols-1 w-full gap-4 px-4
+         <div class="mt-8 ml-4 w-auto">
+            <h1 class="text-xl font-bold ml-4">My Workouts</h1>
+         </div>
+        <div class="grid grid-cols-1 w-full mt-2 gap-4 px-4
         md:grid-cols-2
         lg:grid-cols-3">
             <div class="grid bg-neutral-200 w-full rounded-md px-4 py-4 shadow-inner shadow-neutral-300"> <!-- workout -->
@@ -126,7 +112,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
     <script src="../script.js"></script>
 </body>

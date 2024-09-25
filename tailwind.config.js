@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     './build/*.html',
-    './build/workouts/*.html'],
+    './build/workouts/*.html',
+    './build/profile/*.html'],
   theme: {
     extend: {
       keyframes: {
