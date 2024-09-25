@@ -14,10 +14,10 @@
 <!-- bg-teal-200 nice color for background bossble -->
 <body class="min-h-dvh bg-neutral-300"> <!-- light gray background -->
     <header>
-        <div class="w-full h-16 bg-neutral-700 "> <!-- nav background -->
+        <div class="w-full h-16 bg-neutral-700"> <!-- nav background -->
             <nav class="max-w-screen-xl mx-auto flex h-16 w-auto bg-neutral-700 items-center"> <!-- nav contents -->
                 <div class="ml-4
-                lg:ml-0"> <!-- left group of nav links -->
+                lg:ml-2"> <!-- left group of nav links -->
                     <div class="flex space-x-2
                     lg:space-x-4">
                         <div class="my-auto">
@@ -35,8 +35,8 @@
                     </div>
                 </div>
                 <div class="flex w-fit ml-auto mr-4
-                lg:mr-0"> <!-- right group of nav links -->
-                    <a href="./profile.html"><div class="h-10 w-10 bg-red-500 rounded-full
+                lg:mr-2"> <!-- right group of nav links -->
+                    <a href="../profile/profile.html"><div class="h-10 w-10 bg-red-500 rounded-full
                         hover:border-solid hover:border-2 hover:border-white hover:transition"></div></a> <!-- profile button -->
                 </div>
             </nav>
@@ -51,14 +51,16 @@
     </header>
 
     <div class="bg-white max-w-screen-xl h-dvh mx-auto my-0 pt-4 drop-shadow-2xl shadow-black"> <!-- main content background -->
-        <div class="flex w-3/4 mt-4 mx-40">
+        <div class="flex w-fit mt-4 mx-auto
+        md:mx-4">
             <img src="../../bowser.JPG" class="w-50 h-50 rounded-full shadow-lg shadow-neutral-300"/>
-            <h1 class="text-7xl font-extrabold mx-8 my-auto">Name</h1>
+            <h1 class="text-7xl font-extrabold mx-8 my-auto flex-wrap">Name Name</h1>
         </div>
 
         <!-- workouts section -->
          <div class="mt-8 ml-4 w-auto">
-            <h1 class="text-xl font-bold ml-4">My Workouts</h1>
+            <h1 class="text-xl w-fit font-bold mx-auto
+            lg:ml-4">My Workouts</h1>
          </div>
         <div class="grid grid-cols-1 w-full mt-2 gap-4 px-4
         md:grid-cols-2
@@ -67,7 +69,7 @@
                 <div class="flex text-center">
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Legs</h1>
-                    <button class="w-8 h-8 p-2 rounded-md bg-white border border-black font-bold ml-auto mr-0
+                    <button class="flex items-center w-8 h-8 p-2 rounded-md bg-white border border-black font-bold ml-auto mr-0
                     hover:bg-neutral-300">…</button>
                 </div>
                 
