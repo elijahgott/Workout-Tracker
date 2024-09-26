@@ -1,10 +1,10 @@
 const showMobileNav = document.querySelector('#show-mobile-nav');
 const mobileNav = document.querySelector('#mobile-nav');
-let isOpen = false;
+let isNavOpen = false;
 
-function toggleNav(){ //idk why this doesnt work at all sometimes, animations wont go
-    isOpen = !isOpen;
-    if(isOpen){ 
+function toggleNav(){
+    isNavOpen = !isNavOpen;
+    if(isNavOpen){ 
         mobileNav.classList.remove('-translate-x-full');
         mobileNav.classList.add('translate-x-0');
     }
@@ -15,7 +15,11 @@ function toggleNav(){ //idk why this doesnt work at all sometimes, animations wo
 }
 
 function addWorkout() {
-    console.log('add workout')
+    console.log('add workout');
+}
+
+function selectWorkout() {
+    console.log('select workout');
 }
 
 showMobileNav.addEventListener('click', toggleNav);
