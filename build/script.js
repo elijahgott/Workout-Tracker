@@ -24,4 +24,4 @@ function selectWorkout() {
 }
 
 showMobileNav.addEventListener('click', toggleNav);
-body.addEventListener('click', () => { isNavOpen ? toggleNav() : ''});
+body.addEventListener('click', () => { isNavOpen ? toggleNav() : ''}); 
