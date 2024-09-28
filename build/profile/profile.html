@@ -36,24 +36,26 @@
                 </div>
                 <div class="flex w-fit ml-auto mr-4
                 lg:mr-2"> <!-- right group of nav links -->
-                    <a href="../profile/profile.html"><img src="../../bowser.JPG" class="h-10 w-10 bg-red-500 rounded-full
+                    <a href="../profile/profile.html"><img src="../images/bowser.JPG" class="h-10 w-10 bg-red-500 rounded-full
                         hover:border-solid hover:border-2 hover:border-white hover:transition"></img></a> <!-- profile button -->
                 </div>
             </nav>
         </div>
         <!-- mobile nav -->
         <div id="mobile-nav" class="absolute -translate-x-full z-10 bg-neutral-700 h-dvh w-2/5 transition-all duration-1000 lg:hidden">
-            <a href="../index.html" class="block text-lg font-medium text-gray-100 py-4
+            <a href="../index.html" class="block text-lg font-medium text-gray-100 py-4 border-y border-neutral-900
             hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Home</p></a>
-            <a href="../workouts/myworkouts.html" class="block text-lg font-medium text-gray-100 py-4
+            <a href="../workouts/myworkouts.html" class="block text-lg font-medium text-gray-100 py-4 border-b border-neutral-900
             hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Workouts</p></a>
+            <a href="../profile/profile.html" class="block text-lg font-medium text-gray-100 py-4 border-b border-neutral-900
+            hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Profile</p></a>
         </div>
     </header>
 
-    <div class="bg-white max-w-screen-xl h-dvh mx-auto my-0 pt-4 drop-shadow-2xl shadow-black"> <!-- main content background -->
+    <div id="body" class="bg-white max-w-screen-xl h-dvh mx-auto my-0 pt-4 drop-shadow-2xl shadow-black"> <!-- main content background -->
         <div class="flex w-fit mt-4 mx-4
         lg:mx-8">
-            <img src="../../bowser.JPG" class="w-28 h-28 rounded-full shadow-lg shadow-neutral-300
+            <img src="../images/bowser.JPG" class="w-28 h-28 rounded-full shadow-lg shadow-neutral-300
             lg:w-40 lg:h-40"/>
             <h1 class="text-4xl w-fit font-bold text-neutral-800 mx-8 my-auto text-balance tracking-wide
             md:text-5xl lg:text-7xl">Peyton Zimmerman</h1>
@@ -71,8 +73,8 @@
                 <div class="flex text-center">
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Legs</h1>
-                    <button class="flex items-center w-8 h-8 p-2 rounded-md bg-white border border-black font-bold ml-auto mr-0
-                    hover:bg-neutral-300">…</button>
+                    <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
+                    hover:bg-neutral-300"><img src="../images/horizontal-dots.jpg"/></button>
                 </div>
                 
                 <div class="grid grid-cols-3">
@@ -88,7 +90,12 @@
                 </div>
             </div>
             <div class="grid bg-neutral-200 w-full rounded-md px-4 py-4 shadow-inner shadow-neutral-300"> <!-- workout -->
-                <h1 class="font-bold text-xl text-center pb-2">Push</h1>
+                <div class="flex text-center">
+                    <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
+                    <h1 class="w-full font-bold text-xl text-center pb-2">Push</h1>
+                    <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
+                    hover:bg-neutral-300"><img src="../images/horizontal-dots.jpg"/></button>
+                </div>
                 <div class="grid grid-cols-3">
                     <p class="text-left">Arm Squats</p>
                     <p class="text-center">5 x 5</p>
@@ -102,7 +109,12 @@
                 </div>
             </div>
             <div class="grid bg-neutral-200 w-full rounded-md px-4 py-4 shadow-inner shadow-neutral-300"> <!-- workout -->
-                <h1 class="font-bold text-xl text-center pb-2">Pull</h1>
+                <div class="flex text-center">
+                    <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
+                    <h1 class="w-full font-bold text-xl text-center pb-2">Pull</h1>
+                    <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
+                    hover:bg-neutral-300"><img src="../images/horizontal-dots.jpg"/></button>
+                </div>
                 <div class="grid grid-cols-3">
                     <p class="text-left">Back Squats</p>
                     <p class="text-center">5 x 5</p>

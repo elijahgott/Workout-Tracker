@@ -1,5 +1,6 @@
 const showMobileNav = document.querySelector('#show-mobile-nav');
 const mobileNav = document.querySelector('#mobile-nav');
+const body = document.querySelector('#body');
 let isNavOpen = false;
 
 function toggleNav(){
@@ -23,3 +24,4 @@ function selectWorkout() {
 }
 
 showMobileNav.addEventListener('click', toggleNav);
+body.addEventListener('click', () => { isNavOpen ? toggleNav() : ''});
