@@ -1,5 +1,6 @@
 const showMobileNav = document.querySelector('#show-mobile-nav');
 const mobileNav = document.querySelector('#mobile-nav');
+const navBlur = document.querySelector('#nav-blur');
 const body = document.querySelector('#body');
 let isNavOpen = false;
 
@@ -8,10 +9,16 @@ function toggleNav(){
     if(isNavOpen){ 
         mobileNav.classList.remove('-translate-x-full');
         mobileNav.classList.add('translate-x-0');
+
+        navBlur.classList.remove('scale-0');
+        navBlur.classList.add('scale-[1.13]');
     }
     else{
         mobileNav.classList.remove('translate-x-0');
         mobileNav.classList.add('-translate-x-full');
+
+        navBlur.classList.remove('scale-[1.13]');
+        navBlur.classList.add('scale-0');
     }
 }
 
@@ -24,4 +31,4 @@ function selectWorkout() {
 }
 
 showMobileNav.addEventListener('click', toggleNav);
-body.addEventListener('click', () => { isNavOpen ? toggleNav() : ''}); 
+navBlur.addEventListener('click', () => { isNavOpen ? toggleNav() : ''}); 
