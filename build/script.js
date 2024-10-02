@@ -10,15 +10,15 @@ function toggleNav(){
         mobileNav.classList.remove('-translate-x-full');
         mobileNav.classList.add('translate-x-0');
 
-        navBlur.classList.remove('scale-0');
-        navBlur.classList.add('scale-[1.13]');
+        navBlur.classList.remove('opacity-0');
+        navBlur.classList.add('opacity-100');
     }
     else{
         mobileNav.classList.remove('translate-x-0');
         mobileNav.classList.add('-translate-x-full');
 
-        navBlur.classList.remove('scale-[1.13]');
-        navBlur.classList.add('scale-0');
+        navBlur.classList.remove('opacity-100');
+        navBlur.classList.add('opacity-0');
     }
 }
 
