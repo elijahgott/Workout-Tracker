@@ -84,15 +84,66 @@
             <button class="bg-teal-400 mx-auto p-2 rounded-lg font-bold text-white shadow-md shadow-neutral-300 border-2 border-teal-500
             lg:p-4 lg:text-lg hover:bg-teal-500 hover:scale-105 hover:transition" data="workoutList" onclick="toggleWorkoutMenu()">Add Workout</button>
         </div>
-        <div id="workout-blur" class="hidden top-0 h-full w-full opacity-0 backdrop-blur-sm"></div>
-        <div id="workout-menu" class="absolute z-20 scale-0 left-0 right-0 mx-auto w-11/12 bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500
-        h-64
-        md:h-72
-        lg:h-80"> <!-- add workout menu -->
-            <h1 class="font-bold py-2 text-center
+        <!-- menu for adding a workout -->
+        <div id="workout-blur" class="hidden top-0 h-full w-full opacity-0 scale-x-125 backdrop-blur-sm"></div>
+        <div id="workout-menu" class="absolute z-20 scale-0 left-0 right-0 mx-auto w-11/12 h-fit bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500"> <!-- add workout menu -->
+            <h1 class="font-bold pt-4 text-center
             text-lg
             md:text-xl
             lg:text-2xl">Add Workout</h1>
+            <div class="px-10 pt-6 mx-6">
+                <form class="text-xl">
+                    <div class="w-fit mx-auto mb-4">
+                        <label for="name" class="font-bold
+                        text-md
+                        md:text-lg
+                        lg:text-xl">Name:</label>
+                        <input type="text" name="name" class="border-2 border-neutral-400 rounded-md transition-all duration-200
+                        w-40
+                        md:w-52
+                        lg:w-72">
+                    </div>
+                    <div class="flex flex-wrap w-fit mx-auto mb-4">
+                        <h1 class="font-bold text-center mr-2
+                        text-md
+                        md:text-lg
+                        lg:text-xl">Day(s):</h1>
+                            <label for="sunday" class="pr-1">Sun:</label>
+                            <input type="checkbox" value="sunday" name="sunday" class="mr-2">
+                            <label for="monday" class="pr-1">Mon:</label>
+                            <input type="checkbox" value="monday" name="monday" class="mr-2">
+                            <label for="tuesday" class="pr-1">Tue:</label>
+                            <input type="checkbox" value="tuesday" name="tuesday" class="mr-2">
+                            <label for="wednesday" class="pr-1">Wed:</label>
+                            <input type="checkbox" value="wednesday" name="wednesday" class="mr-2">
+                            <label for="thursday" class="pr-1">Thu:</label>
+                            <input type="checkbox" value="thursday" name="thursday" class="mr-2">
+                            <label for="friday" class="pr-1">Fri:</label>
+                            <input type="checkbox" value="friday" name="friday" class="mr-2">
+                            <label for="saturday" class="pr-1">Sat:</label>
+                            <input type="checkbox" value="saturday" name="saturday" class="mr-2">
+                    </div>
+                    <div class="w-fit mx-auto mb-4 font-bold">
+                        <h1>Exercises</h1>
+                    </div>
+                    <div class="flex flex-wrap w-fit mx-auto mb-4">
+                        <label for="exercise" class="pr-1">Exercise Name:</label>
+                        <input name="exercise" class="mr-2 border-2 border-neutral-400 rounded-md
+                        w-40
+                        md:w-52
+                        lg:w-72">
+                        <label for="sets" class="pr-1">Sets:</label>
+                        <input type="number" value="sets" name="sets" class="w-12 border-2 border-neutral-400 rounded-md">
+                        <p class="px-6">x</p>
+                        <label for="reps" class="pr-1">Reps:</label>
+                        <input type="number" value="reps" name="reps" class="w-12 border-2 border-neutral-400 rounded-md">
+                    </div>
+                    <div class="w-fit mx-auto pb-6">
+                        <button class="mx-auto bg-teal-400 p-2 rounded-lg font-bold text-white shadow-md shadow-neutral-300 border-2 border-teal-500
+                        lg:text-lg hover:bg-teal-500 hover:scale-105 hover:transition" data="workoutList" onclick="submitWorkout()">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <!-- workouts section -->
         <div class="grid grid-cols-1 w-full gap-4 px-4

@@ -1,8 +1,10 @@
+//variables for mobile nav 
 const showMobileNav = document.querySelector('#show-mobile-nav');
 const mobileNav = document.querySelector('#mobile-nav');
 const navBlur = document.querySelector('#nav-blur');
 let isNavOpen = false;
 
+//variables for menu to add a workout
 const workoutBlur = document.querySelector('#workout-blur');
 const workoutMenu = document.querySelector('#workout-menu');
 let isWorkoutMenuOpen = false;
@@ -54,6 +56,7 @@ function toggleWorkoutMenu() {
 
 function submitWorkout() {
     console.log('add workout');
+    toggleWorkoutMenu();
 }
 
 function selectWorkout() {
