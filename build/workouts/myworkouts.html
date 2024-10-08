@@ -87,10 +87,17 @@
         <!-- menu for adding a workout -->
         <div id="workout-blur" class="hidden top-0 h-full w-full opacity-0 scale-x-125 backdrop-blur-sm"></div>
         <div id="workout-menu" class="absolute z-20 scale-0 left-0 right-0 mx-auto w-11/12 h-fit bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500"> <!-- add workout menu -->
-            <h1 class="font-bold pt-4 text-center
-            text-lg
-            md:text-xl
-            lg:text-2xl">Add Workout</h1>
+            <div class="flex"> 
+                <div class="h-12 w-12"></div> 
+                <div class="flex w-full justify-center">
+                    <h1 class="font-bold pt-4
+                    text-lg
+                    md:text-xl
+                    lg:text-2xl">Add Workout</h1>
+                </div>
+                <button onclick="toggleWorkoutMenu()" class="h-12 w-12 ml-auto mr-0"><img src="../images/x.webp" /></button>
+            </div>
+            
             <div class="px-10 pt-6 mx-6">
                 <form class="text-xl">
                     <div class="w-fit mx-auto mb-4">
@@ -128,7 +135,7 @@
                     </div>
                     <div class="flex flex-wrap w-fit mx-auto mb-4">
                         <label for="exercise" class="pr-1">Exercise Name:</label>
-                        <input name="exercise" class="mr-2 border-2 border-neutral-400 rounded-md
+                        <input name="exercise" class="h-8 mr-2 border-2 border-neutral-400 rounded-md
                         w-40
                         md:w-52
                         lg:w-72">
@@ -139,7 +146,7 @@
                         <input type="number" value="reps" name="reps" class="w-12 border-2 border-neutral-400 rounded-md">
                     </div>
                     <div class="w-fit mx-auto pb-6">
-                        <button class="mx-auto bg-teal-400 p-2 rounded-lg font-bold text-white shadow-md shadow-neutral-300 border-2 border-teal-500
+                        <button class="mx-auto bg-teal-400 p-2 rounded-lg font-bold text-md text-white shadow-md shadow-neutral-300 border-2 border-teal-500
                         lg:text-lg hover:bg-teal-500 hover:scale-105 hover:transition" data="workoutList" onclick="submitWorkout()">Submit</button>
                     </div>
                 </form>
@@ -154,7 +161,7 @@
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Legs</h1>
                     <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
-                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.jpg"/></button>
+                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.webp"/></button>
                 </div>
                 
                 <div class="grid grid-cols-3">
@@ -181,7 +188,7 @@
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Push</h1>
                     <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
-                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.jpg"/></button>
+                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.webp"/></button>
                 </div>
                 <div class="grid grid-cols-3">
                     <p class="text-left">Arm Squats</p>
@@ -200,7 +207,7 @@
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Pull</h1>
                     <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
-                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.jpg"/></button>
+                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.webp"/></button>
                 </div>
                 <div class="grid grid-cols-3">
                     <p class="text-left">Back Squats</p>
