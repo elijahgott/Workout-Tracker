@@ -15,12 +15,13 @@ This application is for tracking one's progress in the gym. This is done by trac
 - Track meals / calories
 
 ### To Do:
-- Webpages:
-    - Finish Home page
-    - Add profile page
-    - Add workouts page
-        - Display previous workouts?
-        - Display workout sets (Arms -> bench, biceps curl, etc)
+- Website:
+    - Fix recent workouts on home page
+    - Add dropdown menus for workout schedule
+    - Add pop up menu to add workouts
+    - Add menu to edit / erase workouts
+    - Add menu to edit profile name / picture
+
 - Database:
     - MongoDB?
     - User

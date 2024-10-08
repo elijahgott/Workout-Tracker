@@ -12,19 +12,22 @@
     <link rel="icon" href="/favicon.ico">
 </head>
 <!-- bg-teal-200 nice color for background bossble -->
-<body class="min-h-dvh bg-neutral-300"> <!-- light gray background -->
+<body class="min-h-dvh bg-neutral-200"> <!-- light gray background -->
     <header>
         <div class="w-full h-16 bg-neutral-700"> <!-- nav background -->
-            <nav class="max-w-screen-xl mx-auto flex h-16 w-auto bg-neutral-700 items-center"> <!-- nav contents -->
+            <nav class="max-w-screen-xl mx-auto grid grid-cols-3 h-16 w-auto bg-neutral-700 items-center
+            lg:flex"> <!-- nav contents -->
                 <div class="ml-4
                 lg:ml-2"> <!-- left group of nav links -->
                     <div class="flex space-x-2
                     lg:space-x-4">
                         <div class="my-auto">
-                            <div class="hidden lg:grid place-content-center h-10 w-10 bg-red-500 rounded-full"><div class="h-8 w-8 bg-neutral-700 rounded-full"></div></div> <!-- logo placeholder -->
-                            <a id="show-mobile-nav" class="h-12 w-12 lg:hidden">
+                            <div class="hidden lg:grid place-content-center h-10 w-10">
+                                <a href="../index.html"><img src="../../favicon.ico" class="hover:scale-105 hover:transition-all"></a>
+                            </div> <!-- logo -->
+                            <button id="show-mobile-nav" class="h-10 w-10 p-1 lg:hidden hover:scale-110 hover:transition-all">
                                 <i class="fa fa-bars text-white"></i>
-                            </a>
+                            </button>
                         </div>
                         <div class="hidden lg:flex"> <!-- regular nav -->
                             <a href="../index.html" class="px-3 py-2 text-lg font-medium text-gray-100
@@ -34,22 +37,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex w-fit ml-auto mr-4
+                <div class="flex lg:hidden place-content-center h-10 w-10 mx-auto">
+                    <a href="../index.html"><img src="../../favicon.ico" class="my-auto mx-auto hover:scale-105 hover:transition-all"></a>
+                </div> <!-- mobile logo -->
+                <div class="w-fit ml-auto mr-4
                 lg:mr-2"> <!-- right group of nav links -->
                     <a href="../profile/profile.html"><img src="../images/bowser.JPG" class="h-10 w-10 bg-red-500 rounded-full
-                        hover:border-solid hover:border-2 hover:border-white hover:transition"></img></a> <!-- profile button -->
+                        hover:border-solid hover:border-2 hover:border-white hover:transition hover:scale-110"></img></a> <!-- profile button -->
                 </div>
             </nav>
         </div>
         <!-- mobile nav -->
         <div class="h-full w-full">
-            <div id="nav-blur" class="absolute z-10 opacity-0 rounded-md backdrop-blur-sm w-full h-full transition-all duration-1000 lg:hidden"></div>
+            <div id="nav-blur" class="hidden z-10 opacity-0 rounded-md backdrop-blur-sm w-full h-full transition-all duration-1000 lg:hidden"></div>
             <div id="mobile-nav" class="absolute z-20 bg-neutral-700 w-2/5 h-full -translate-x-full transition-all duration-1000 lg:hidden">
-                <a href="../index.html" class="block text-lg font-medium text-gray-100 py-4 border-y border-neutral-900
+                <a href="../index.html" class="block text-lg font-medium bg-neutral-600 text-gray-100 py-4 border-y border-neutral-900
                 hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Home</p></a>
-                <a href="../workouts/myworkouts.html" class="block text-lg font-medium text-gray-100 py-4 border-b border-neutral-900
+                <a href="../workouts/myworkouts.html" class="block text-lg font-medium bg-neutral-600 text-gray-100 py-4 border-b border-neutral-900
                 hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Workouts</p></a>
-                <a href="../profile/profile.html" class="block text-lg font-medium text-gray-100 py-4 border-b border-neutral-900
+                <a href="../profile/profile.html" class="block text-lg font-medium bg-neutral-600 text-gray-100 py-4 border-b border-neutral-900
                 hover:bg-teal-300 hover:transition" aria-current="page"><p class="ml-4">Profile</p></a>
             </div>
         </div>
@@ -61,7 +67,7 @@
             <img src="../images/bowser.JPG" class="w-28 h-28 rounded-full shadow-lg shadow-neutral-300
             lg:w-40 lg:h-40"/>
             <h1 class="text-4xl w-fit font-bold text-neutral-800 mx-8 my-auto text-balance tracking-wide
-            md:text-5xl lg:text-7xl">Peyton Zimmerman</h1>
+            md:text-5xl lg:text-7xl">Firstname Lastname</h1>
         </div>
 
         <!-- workouts section -->
@@ -76,8 +82,8 @@
                 <div class="flex text-center">
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Legs</h1>
-                    <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
-                    hover:bg-neutral-300"><img src="../images/horizontal-dots.jpg"/></button>
+                    <button class="flex items-center h-8 w-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
+                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.jpg"/></button>
                 </div>
                 
                 <div class="grid grid-cols-3">
@@ -97,7 +103,7 @@
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Push</h1>
                     <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
-                    hover:bg-neutral-300"><img src="../images/horizontal-dots.jpg"/></button>
+                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.jpg"/></button>
                 </div>
                 <div class="grid grid-cols-3">
                     <p class="text-left">Arm Squats</p>
@@ -116,7 +122,7 @@
                     <div class="w-8 h-8 p-2 ml-0 mr-auto border border-transparent"></div><!-- this is just here to center the header better -->
                     <h1 class="w-full font-bold text-xl text-center pb-2">Pull</h1>
                     <button class="flex items-center w-8 h-8 p-2 rounded-full bg-white border border-black font-bold ml-auto mr-0
-                    hover:bg-neutral-300"><img src="../images/horizontal-dots.jpg"/></button>
+                    hover:bg-neutral-300 hover:scale-105 hover:transition-all"><img src="../images/horizontal-dots.jpg"/></button>
                 </div>
                 <div class="grid grid-cols-3">
                     <p class="text-left">Back Squats</p>
