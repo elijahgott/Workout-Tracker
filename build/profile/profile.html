@@ -42,8 +42,8 @@
                 </div> <!-- mobile logo -->
                 <div class="w-fit ml-auto mr-4
                 lg:mr-2"> <!-- right group of nav links -->
-                    <a href="../profile/profile.html"><img src="../images/bowser.JPG" class="h-10 w-10 bg-red-500 rounded-full
-                        hover:border-solid hover:border-2 hover:border-white hover:transition hover:scale-110"></img></a> <!-- profile button -->
+                    <a href="../profile/profile.html"><img src="../images/bowser.JPG" class="h-10 w-10 rounded-full
+                    hover:transition hover:scale-105"></img></a> <!-- profile button -->
                 </div>
             </nav>
         </div>
@@ -62,13 +62,20 @@
     </header>
 
     <div id="body" class="bg-white max-w-screen-xl h-dvh mx-auto my-0 pt-4 drop-shadow-2xl shadow-black"> <!-- main content background -->
-        <div class="flex w-fit mt-4 mx-4
+        <div class="flex relative w-fit mt-4 mx-4
         lg:mx-8">
-            <img src="../images/bowser.JPG" class="w-28 h-28 rounded-full shadow-lg shadow-neutral-300
-            lg:w-40 lg:h-40"/>
-            <h1 class="text-4xl w-fit font-bold text-neutral-800 mx-8 my-auto text-balance tracking-wide
-            md:text-5xl lg:text-7xl">Firstname Lastname</h1>
+            <div class="group relative flex w-fit h-fit">
+                <img src="../images/bowser.JPG" class="group w-28 h-28 rounded-full shadow-lg shadow-neutral-300
+                lg:w-40 lg:h-40"/>
+                <button onclick="toggleEditProfile()" class="absolute invisible right-0 w-6 h-6 bg-neutral-200 rounded-full border border-black hover:transition-all hover:bg-neutral-300 hover:scale-105 group-hover:visible"><img src="../images/pencil.webp" class="mx-auto w-4 h-4"/></button> <!-- edit button -->
+            </div>
+            <div class="group relative flex w-fit h-fit self-center">
+                <h1 class="text-4xl w-fit font-bold text-neutral-800 mx-8 my-auto text-balance tracking-wide
+                md:text-5xl lg:text-7xl">Firstname Lastname</h1>
+                <button onclick="toggleEditProfile()" class="absolute invisible right-0 w-6 h-6 bg-neutral-200 rounded-full border border-black hover:transition-all hover:bg-neutral-300 hover:scale-105 group-hover:visible"><img src="../images/pencil.webp" class="mx-auto w-4 h-4"/></button> <!-- edit button -->
+            </div>
         </div>
+        
 
         <!-- workouts section -->
          <div class="mt-8 ml-4 w-auto">
