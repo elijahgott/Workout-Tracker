@@ -18,7 +18,6 @@ This application is for tracking one's progress in the gym. This is done by trac
 - Website:
     - Fix recent workouts on home page
     - Add dropdown menus for workout schedule
-    - Add pop up menu to add workouts
     - Add menu to edit / erase workouts
     - Add menu to edit profile name / picture
 

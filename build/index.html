@@ -62,7 +62,7 @@
         
     </header>
 
-    <div id="body" class="bg-white w-full h-dvh mx-auto my-0 pt-4 drop-shadow-2xl shadow-black
+    <div id="body" class="bg-white w-full h-dvh mx-auto my-0 pt-4 pb-4 drop-shadow-2xl shadow-black
     xl:max-w-screen-xl"> <!-- main content background -->
         <div class="grid h-fit px-4 mx-6 mb-6 rounded-md bg-neutral-200 shadow-lg shadow-neutral-300 "> <!-- weekly calendar -->
             <h1 class="mx-auto mt-4 text-xl font-bold text-gray-700
@@ -170,9 +170,9 @@
         <div class="grid h-fit mx-6 mb-6 rounded-md bg-neutral-200 shadow-inner shadow-neutral-300
         px-2
         md:px-4
-        lg:px-6"> <!-- weekly schedule -->
+        lg:px-6 lg:pb-2"> <!-- weekly schedule -->
             <h1 class="mx-auto mt-4 text-lg font-bold text-gray-700
-            lg:text-3xl">Schedule</h1>
+            lg:text-3xl lg:pb-2">Schedule</h1>
             <div class="grid grid-cols-7 h-fit pt-2 pb-4
             gap-1
             md:gap-2
@@ -284,34 +284,37 @@
                 </div>
             </div>    
         </div>
-        <div class="grid h-fit px-4 mx-6 mb-6 rounded-md bg-neutral-200 shadow-inner shadow-neutral-300 "> <!-- weekly schedule -->
-            <h1 class="mx-auto mt-4 pb-2 text-lg font-bold text-gray-700
-            lg:text-3xl">Recent Workouts</h1>
-            <div class="grid grid-cols-2 pb-2">
-                <!-- recent workouts -->
-                <div class="w-fit mx-auto pb-4">
-                    <h1 class="font-bold text-gray-600 tracking-wider
+        <div class="grid h-fit mx-6 mb-4 border-2 border-neutral-200 border-dashed rounded-md"> <!-- recent workouts -->
+            <h1 class="mx-auto py-2 text-lg font-bold text-gray-700
+            lg:text-3xl lg:py-4">Recent Workouts</h1>
+            <div class="grid grid-cols-1 px-2 pb-2 text-white
+            lg:px-4">
+                <div class="flex w-full bg-teal-300 mx-auto mb-3 shadow-lg
+                h-12 rounded-xl px-6
+                md:h-16 md:rounded-2xl md:px-10
+                lg:h-20 lg:rounded-3xl lg:px-16">
+                    <h1 class="font-bold tracking-wider ml-0 mr-auto my-auto
                     text-md
                     md:text-lg
                     lg:text-xl">Push</h1>
-                </div>
-                <div class="w-fit mx-auto pb-4">
-                    <h1 class="font-bold text-gray-600
+                    <h1 class="font-bold mr-0 ml-auto my-auto
                     text-md
                     md:text-lg
                     lg:text-xl">10/2/2024</h1>
                 </div>
-                <div class="w-fit mx-auto pb-4">
-                    <h1 class="font-bold text-gray-600 tracking-wider
+                <div class="flex w-full bg-teal-300 mx-auto mb-3 shadow-lg
+                h-12 rounded-xl px-6
+                md:h-16 md:rounded-2xl md:px-10
+                lg:h-20 lg:rounded-3xl lg:px-16">
+                    <h1 class="font-bold tracking-wider ml-0 mr-auto my-auto
                     text-md
                     md:text-lg
                     lg:text-xl">Pull</h1>
-                </div>
-                <div class="w-fit mx-auto pb-4">
-                    <h1 class="font-bold text-gray-600
+                    <h1 class="font-bold mr-0 ml-auto my-auto
                     text-md
                     md:text-lg
                     lg:text-xl">10/3/2024</h1>
+                </div>
                 </div>
             </div>
         </div>
