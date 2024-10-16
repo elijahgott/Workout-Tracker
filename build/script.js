@@ -4,11 +4,6 @@ const mobileNav = document.querySelector('#mobile-nav');
 const navBlur = document.querySelector('#nav-blur');
 let isNavOpen = false;
 
-//variables for menu to add a workout
-const workoutBlur = document.querySelector('#workout-blur');
-const workoutMenu = document.querySelector('#workout-menu');
-let isWorkoutMenuOpen = false;
-
 //need to delay adding -z-10 class
 function toggleNav(){
     isNavOpen = !isNavOpen;
@@ -20,7 +15,9 @@ function toggleNav(){
         navBlur.classList.remove('opacity-0');
         navBlur.classList.remove('-z-10');
         navBlur.classList.add('opacity-100');
-        navBlur.classList.add('z-10');
+        setTimeout(()=> {
+            navBlur.classList.add('z-10');
+        }, 200);
 
     }
     else{
@@ -29,11 +26,20 @@ function toggleNav(){
         mobileNav.classList.add('-translate-x-full');
         //remove blur from background
         navBlur.classList.remove('opacity-100');
-        navBlur.classList.remove('z-10');
+        setTimeout(() =>{
+            navBlur.classList.remove('z-10');
+        }, 200);
         navBlur.classList.add('opacity-0');
         navBlur.classList.add('-z-10');
     }
 }
+showMobileNav.addEventListener('click', toggleNav);
+navBlur.addEventListener('click', () => { isNavOpen ? toggleNav : ''}); 
+
+//variables for menu to add a workout
+const workoutBlur = document.querySelector('#workout-blur');
+const workoutMenu = document.querySelector('#workout-menu');
+let isWorkoutMenuOpen = false;
 
 function toggleWorkoutMenu() {
     isWorkoutMenuOpen = !isWorkoutMenuOpen;
@@ -58,6 +64,24 @@ function toggleWorkoutMenu() {
         workoutBlur.classList.add('hidden');
     }
 }
+workoutBlur.addEventListener('click', () => { isWorkoutMenuOpen ? toggleWorkoutMenu : ''}); 
+
+//toggle workout dropdown menu (From ChatGPT) 
+function toggleDropdown() {
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    dropdownMenu.classList.toggle('hidden');
+  }
+
+  // Close the dropdown if clicked outside
+  window.onclick = function(event) {
+    if (!event.target.matches('#dropdownButton')) {
+      const dropdownMenu = document.getElementById('dropdownMenu');
+      if (!dropdownMenu.classList.contains('hidden')) {
+        dropdownMenu.classList.add('hidden');
+      }
+    }
+  }
+
 
 function submitWorkout() {
     console.log('add workout');
@@ -67,7 +91,3 @@ function submitWorkout() {
 function selectWorkout() {
     console.log('select workout');
 }
-
-showMobileNav.addEventListener('click', toggleNav);
-navBlur.addEventListener('click', () => { isNavOpen ? toggleNav() : ''}); 
-workoutBlur.addEventListener('click', () => { isWorkoutMenuOpen ? toggleWorkoutMenu() : ''}); 
