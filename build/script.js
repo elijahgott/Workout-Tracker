@@ -4,7 +4,6 @@ const mobileNav = document.querySelector('#mobile-nav');
 const navBlur = document.querySelector('#nav-blur');
 let isNavOpen = false;
 
-//need to delay adding -z-10 class
 function toggleNav(){
     isNavOpen = !isNavOpen;
     if(isNavOpen){
@@ -16,7 +15,7 @@ function toggleNav(){
         navBlur.classList.remove('-z-10');
         navBlur.classList.add('opacity-100');
         setTimeout(()=> {
-            navBlur.classList.add('z-10');
+            navBlur.classList.add('z-20');
         }, 200);
 
     }
@@ -27,14 +26,14 @@ function toggleNav(){
         //remove blur from background
         navBlur.classList.remove('opacity-100');
         setTimeout(() =>{
-            navBlur.classList.remove('z-10');
+            navBlur.classList.remove('z-20');
         }, 200);
         navBlur.classList.add('opacity-0');
         navBlur.classList.add('-z-10');
     }
 }
 showMobileNav.addEventListener('click', toggleNav);
-navBlur.addEventListener('click', () => { isNavOpen ? toggleNav : ''}); 
+navBlur.addEventListener('click', () => { isNavOpen ? toggleNav() : ''}); 
 
 //variables for menu to add a workout
 const workoutBlur = document.querySelector('#workout-blur');
@@ -64,7 +63,12 @@ function toggleWorkoutMenu() {
         workoutBlur.classList.add('hidden');
     }
 }
-workoutBlur.addEventListener('click', () => { isWorkoutMenuOpen ? toggleWorkoutMenu : ''}); 
+workoutBlur.addEventListener('click', () => { isWorkoutMenuOpen ? toggleWorkoutMenu() : ''}); 
+
+function submitWorkout() {
+    console.log('add workout');
+    toggleWorkoutMenu();
+}
 
 //toggle workout dropdown menu (From ChatGPT) 
 function toggleDropdown() {
@@ -81,12 +85,6 @@ function toggleDropdown() {
       }
     }
   }
-
-
-function submitWorkout() {
-    console.log('add workout');
-    toggleWorkoutMenu();
-}
 
 function selectWorkout() {
     console.log('select workout');
