@@ -48,9 +48,9 @@ function toggleWorkoutMenu() {
         workoutMenu.classList.add('scale-100');
         //add blur to background
         workoutBlur.classList.remove('opacity-0');
-        workoutBlur.classList.remove('hidden');
+        workoutBlur.classList.remove('-z-10');
         workoutBlur.classList.add('opacity-100');
-        workoutBlur.classList.add('absolute');
+        workoutBlur.classList.add('z-10');
     }
     else{
         //hide workout menu
@@ -58,9 +58,9 @@ function toggleWorkoutMenu() {
         workoutMenu.classList.add('scale-0');
         //remove blur from background
         workoutBlur.classList.remove('opacity-100');
-        workoutBlur.classList.remove('absolute');
+        workoutBlur.classList.remove('z-10');
         workoutBlur.classList.add('opacity-0');
-        workoutBlur.classList.add('hidden');
+        workoutBlur.classList.add('-z-10');
     }
 }
 workoutBlur.addEventListener('click', () => { isWorkoutMenuOpen ? toggleWorkoutMenu() : ''}); 
@@ -70,22 +70,19 @@ function submitWorkout() {
     toggleWorkoutMenu();
 }
 
-//toggle workout dropdown menu (From ChatGPT) 
-function toggleDropdown() {
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    dropdownMenu.classList.toggle('hidden');
-  }
-
-  // Close the dropdown if clicked outside
-  window.onclick = function(event) {
-    if (!event.target.matches('#dropdownButton')) {
-      const dropdownMenu = document.getElementById('dropdownMenu');
-      if (!dropdownMenu.classList.contains('hidden')) {
-        dropdownMenu.classList.add('hidden');
-      }
-    }
-  }
-
-function selectWorkout() {
-    console.log('select workout');
+function toggleEditWorkout() {
+    console.log('edit this mf');
 }
+
+function deleteWorkout(){
+    console.log('delete this mf')
+}
+
+// Function to toggle the options menu
+
+let isOptionsMenuOpen = false;
+function toggleOptionsMenu() {
+    const optionsMenu = document.getElementById('optionsMenu');
+    optionsMenu.classList.toggle('hidden');
+    isOptionsMenuOpen = !isOptionsMenuOpen;
+  }
