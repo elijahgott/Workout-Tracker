@@ -16,13 +16,10 @@ This application is for tracking one's progress in the gym. This is done by trac
 
 ### To Do:
 - Website:
-    - Fix recent workouts on home page
-    - Add dropdown menus for workout schedule
-    - Add menu to edit / erase workouts
     - Add menu to edit profile name / picture
 
 - Database:
-    - MongoDB?
+    - MongoDB
     - User
         - Username
         - UID?
@@ -34,3 +31,4 @@ This application is for tracking one's progress in the gym. This is done by trac
         - Sets
         - Reps
         - Weight
+        - Date
