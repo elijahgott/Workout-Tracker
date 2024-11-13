@@ -137,6 +137,30 @@
             </form>
         </div>
     </div>
+    <!-- menu to edit profile -->
+    <div id="edit-profile-blur" class="absolute -z-10 top-0 h-full w-full opacity-0 scale-x-100 backdrop-blur-sm
+    transition-all duration-500"></div>
+    <div id="edit-profile-menu" class="absolute z-20 top-1/2 -translate-y-1/2 scale-0 left-0 right-0 mx-auto h-fit p-4 bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500
+    min-w-fit
+    lg:w-2/3">
+        <h1 class="text-lg font-bold text-center mb-2">Edit Profile</h1>
+        <form class="max-w-80
+        md:max-w-96">
+            <div class="block w-fit mx-auto pb-2">
+                <label for="name">New Name: </label>
+                <input type="text" id="name" class="border rounded-md border-neutral-700">
+            </div>
+            <div class="flex w-fit mx-auto border border-black">
+                <label for="photo" class="pr-2">Select Photo: </label>
+                <input type="file" id="photo" accept="image/*" class="w-fit my-auto">
+            </div>
+            <div class="w-fit mx-auto pt-2">
+                <button class="mx-auto bg-teal-400 p-2 rounded-lg font-bold text-md text-white shadow-md shadow-neutral-300 border-2 border-teal-500
+                lg:text-lg hover:bg-teal-500 hover:scale-105 hover:transition" data="workoutList" onclick="submitProfileChanges()">Submit</button>
+            </div>
+        </form>
+    </div>
+
     <div id="body" class="min-h-body bg-white max-w-screen-xl mx-auto my-0 pt-4 pb-4 shadow-2xl"> <!-- main content background -->
         <div class="flex relative w-fit mt-4 mx-4
         lg:mx-8">

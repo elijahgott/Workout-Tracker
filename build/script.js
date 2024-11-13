@@ -111,7 +111,7 @@ function toggleEditWorkoutMenu() {
         workoutBlur.classList.add('-z-10');
     }
 }
-//only look for workoutBlur if on workouts page
+//only look for workoutBlur if not on homepage
 if(!pathname.endsWith('index.html')){ 
     workoutBlur.addEventListener('click', () => { isEditWorkoutMenuOpen ? toggleEditWorkoutMenu() : ''}); 
 }
@@ -142,6 +142,21 @@ window.onclick = function(e) {
 };
 
 //toggle menu to edit profile picture or name
+const profileBlur = document.querySelector('#edit-profile-blur');
+const profileMenu = document.querySelector('#edit-profile-menu');
+let isEditProfileMenuOpen = false;
 function toggleEditProfile() {
-    console.log('edit profile');
+    profileBlur.classList.toggle('opacity-0');
+    profileBlur.classList.toggle('opacity-100');
+    profileBlur.classList.toggle('-z-10');
+    profileBlur.classList.toggle('z-20');
+
+    profileMenu.classList.toggle('scale-0');
+    profileMenu.classList.toggle('scale-100');
+}
+
+profileBlur.addEventListener('click', () => {toggleEditProfile()});
+
+function submitProfileChanges(){
+    console.log('submitted profile changes (jk)')
 }

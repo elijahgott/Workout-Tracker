@@ -17,6 +17,8 @@ This application is for tracking one's progress in the gym. This is done by trac
 ### To Do:
 - Website:
     - Add menu to edit profile name / picture
+- Database:
+    - Make
 
 - Database:
     - MongoDB
