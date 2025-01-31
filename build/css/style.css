@@ -1,11 +1,14 @@
 /*! tailwindcss v4.0.1 | MIT License | https://tailwindcss.com */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
+@tailwind base;
+@tailwind components;
 .invisible {
   visibility: hidden;
 }
 .absolute {
   position: absolute;
+}
+.fixed {
+  position: fixed;
 }
 .relative {
   position: relative;
