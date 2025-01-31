@@ -12,20 +12,20 @@
     <link rel="icon" href="/favicon.ico">
     <style>
         .min-h-body{
-            min-height: calc(100dvh - 5rem);
+            min-height: calc(100dvh - 6rem);
         }
 
         .h-body{
-            height: calc(100dvh - 5rem);
+            height: calc(100dvh - 6rem);
         }
     </style>
 </head>
-<!-- bg-teal-200 nice color for background bossble -->
-<body class="h-fit bg-neutral-50"> <!-- light gray background -->
+<body class="h-fit bg-neutral-50"> <!-- very light gray background -->
     <header>
-        <div class="w-full h-fit py-2 bg-neutral-700 shadow-2xl"> <!-- nav background -->
-            <nav class="max-w-screen-xl mx-auto grid grid-cols-3 h-16 w-auto bg-neutral-700 items-center
-            lg:flex"> <!-- nav contents -->
+        <div class="w-full h-fit py-2 bg-neutral-700
+        lg:bg-neutral-50"> <!-- nav background -->
+            <nav class="max-w-screen-xl mx-auto grid grid-cols-3 py-4 px-2 w-auto bg-neutral-700 items-center
+            lg:flex lg:rounded-full lg:border-2 lg:border-teal-400"> <!-- nav contents -->
                 <div class="ml-4
                 lg:ml-2"> <!-- left group of nav links -->
                     <div class="flex space-x-2
@@ -70,9 +70,9 @@
         </div>
     </header>
 
-    <div id="body" class="min-h-body bg-white w-full mx-auto my-0 pt-4 pb-4 drop-shadow-2xl shadow-black
+    <div id="body" class="min-h-body w-full mx-auto my-0 pt-4 pb-4
     xl:max-w-screen-xl"> <!-- main content background -->
-        <div class="grid h-fit px-4 mx-6 mb-6 rounded-md bg-neutral-200 shadow-lg shadow-neutral-300"> <!-- weekly calendar -->
+        <div class="grid h-fit px-4 mx-6 mb-6 rounded-md bg-neutral-100 border-2 border-neutral-300 drop-shadow-md"> <!-- weekly calendar -->
             <h1 class="mx-auto mt-4 text-xl font-bold text-gray-700
             lg:text-3xl">Weekly Summary</h1>
             <div class="grid grid-cols-7 items-center py-2
@@ -95,7 +95,7 @@
                     <div class="flex items-center h-[2.75rem] w-[2.75rem] mx-auto bg-red-500 rounded-full
                     md:h-20 md:w-20
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-100 rounded-full mx-auto
                         md:h-14 md:w-14
                         lg:h-24 lg:w-24"> <!-- inner circle -->
                             <h1 class="mx-auto text-sm font-bold
@@ -108,7 +108,7 @@
                     <div class="flex items-center h-[2.75rem] w-[2.75rem] mx-auto bg-red-500 rounded-full
                     md:h-20 md:w-20
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-100 rounded-full mx-auto
                         md:h-14 md:w-14
                         lg:h-24 lg:w-24"> <!-- inner circle -->
                             <h1 class="mx-auto text-sm font-bold
@@ -121,7 +121,7 @@
                     <div class="flex items-center h-[2.75rem] w-[2.75rem] mx-auto bg-red-500 rounded-full
                     md:h-20 md:w-20
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-100 rounded-full mx-auto
                         md:h-14 md:w-14
                         lg:h-24 lg:w-24"> <!-- inner circle -->
                             <h1 class="mx-auto text-sm font-bold
@@ -134,7 +134,7 @@
                     <div class="flex items-center h-[2.75rem] w-[2.75rem] mx-auto bg-red-500 rounded-full
                     md:h-20 md:w-20
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-100 rounded-full mx-auto
                         md:h-14 md:w-14
                         lg:h-24 lg:w-24"> <!-- inner circle -->
                             <h1 class="mx-auto text-sm font-bold
@@ -147,7 +147,7 @@
                     <div class="flex items-center h-[2.75rem] w-[2.75rem] mx-auto bg-red-500 rounded-full
                     md:h-20 md:w-20
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-100 rounded-full mx-auto
                         md:h-14 md:w-14
                         lg:h-24 lg:w-24"> <!-- inner circle -->
                             <h1 class="mx-auto text-sm font-bold
@@ -160,7 +160,7 @@
                     <div class="flex items-center h-[2.75rem] w-[2.75rem] mx-auto bg-red-500 rounded-full
                     md:h-20 md:w-20
                     lg:h-32 lg:w-32"> <!-- outer circle -->
-                        <div class="flex items-center h-8 w-8 bg-neutral-200 rounded-full mx-auto
+                        <div class="flex items-center h-8 w-8 bg-neutral-100 rounded-full mx-auto
                         md:h-14 md:w-14
                         lg:h-24 lg:w-24"> <!-- inner circle -->
                             <h1 class="mx-auto text-sm font-bold
@@ -175,7 +175,7 @@
                 md:text-lg
                 lg:text-xl">1 Workout This Week!</h1>
         </div>
-        <div class="grid h-fit mx-6 mb-6 rounded-md bg-neutral-200 shadow-inner shadow-neutral-300
+        <div class="grid h-fit mx-6 mb-6 rounded-md bg-neutral-100 border-2 border-neutral-300 shadow-inner shadow-neutral-200
         px-2
         md:px-4
         lg:px-6 lg:pb-2"> <!-- weekly schedule -->
@@ -292,7 +292,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid h-fit mx-6 mb-4 border-2 border-neutral-200 border-dashed rounded-md"> <!-- recent workouts -->
+        <div class="grid h-fit mx-6 mb-4 rounded-md"> <!-- recent workouts -->
             <h1 class="mx-auto py-2 text-lg font-bold text-gray-700
             lg:text-3xl lg:py-4">Recent Workouts</h1>
             <div class="grid grid-cols-1 px-2 pb-2 text-white
