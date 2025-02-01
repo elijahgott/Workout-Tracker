@@ -12,10 +12,10 @@
     <link rel="icon" href="../../favicon.ico">
     <style>
         .min-h-body{
-            min-height: calc(100dvh - 6rem);
+            min-height: calc(100dvh - 88px);
         }
         .h-body{
-            height: calc(100dvh - 6rem);
+            height: calc(100dvh - 88px);
         }
     </style>
 </head>
@@ -24,7 +24,7 @@
         <div class="w-full h-fit py-2 bg-neutral-700
         lg:bg-neutral-50"> <!-- nav background -->
             <nav class="max-w-screen-xl mx-auto grid grid-cols-3 py-4 px-2 w-auto bg-neutral-700 items-center
-            lg:flex lg:rounded-full lg:border-2 lg:border-teal-400"> <!-- nav contents -->
+            lg:flex lg:rounded-full lg:border-2 lg:border-teal-400 lg:shadow-md"> <!-- nav contents -->
                 <div class="ml-4
                 lg:ml-2"> <!-- left group of nav links -->
                     <div class="flex space-x-2
@@ -194,12 +194,13 @@
         </div>
         <!-- workouts section -->
         <div class="mt-4 mx-1 px-2 pb-4 text-neutral-800 rounded-md">
-            <div class="block pb-2
-            lg:flex lg:relative">
-                <h1 class="text-2xl font-bold pt-2 pb-2 text-center
+            <div class="pb-2 flex">
+                <h1 class="text-xl font-bold pt-2 pl-6 text-center
+                md:text-2xl
                 lg:text-3xl lg:pl-6">My Workouts</h1>
-                <button class="block bg-teal-400 mx-auto p-2 rounded-lg font-bold text-sm text-white shadow-md shadow-neutral-300 border-2 border-teal-500
-                lg:p-3 lg:text-lg lg:flex lg:absolute lg:right-4 lg:top-0 hover:bg-teal-500 hover:scale-105 hover:transition" data="workoutList" onclick="toggleWorkoutMenu()">+ Add Workout</button>
+                <button class="bg-teal-400 mr-4 ml-auto p-1 rounded-lg font-bold text-sm text-white shadow-md shadow-neutral-300 border-2 border-teal-500
+                md:text-base
+                lg:-top-1 lg:p-3 lg:text-lg hover:bg-teal-500 hover:scale-105 hover:transition" data="workoutList" onclick="toggleWorkoutMenu()">+ Add Workout</button>
             </div>
             <div class="grid grid-cols-1 w-full gap-4 px-4 pt-2
             md:grid-cols-2

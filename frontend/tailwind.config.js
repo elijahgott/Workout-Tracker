@@ -6,6 +6,7 @@ module.exports = {
     './build/workouts/*.html',
     './build/profile/*.html',
     './build/signin/*.html',
+    './build/createaccount/*.html'
   ],
   theme: {
     extend: {
