@@ -71,7 +71,7 @@ function toggleWorkoutMenu() {
     }
 }
 //only look for workoutBlur if on workouts page
-if(pathname.endsWith('myworkouts.html')){ 
+if(pathname.endsWith('myworkouts.html' || 'profile.html')){ 
     workoutBlur.addEventListener('click', () => { isWorkoutMenuOpen ? toggleWorkoutMenu() : ''}); 
 }
 
@@ -82,7 +82,7 @@ function submitWorkout() {
 }
 
 //edit workout
-const editWorkoutMenu = document.querySelector('#edit-workout-menu');
+const editWorkoutMenu = document.querySelector('#workout-menu');
 let isEditWorkoutMenuOpen = false;
 function toggleEditWorkoutMenu() {
     isEditWorkoutMenuOpen = !isEditWorkoutMenuOpen;
@@ -142,7 +142,7 @@ window.onclick = function(e) {
 };
 
 //toggle menu to edit profile picture or name
-const profileBlur = document.querySelector('#edit-profile-blur');
+const profileBlur = document.querySelector('#workout-blur');
 const profileMenu = document.querySelector('#edit-profile-menu');
 let isEditProfileMenuOpen = false;
 function toggleEditProfile() {
