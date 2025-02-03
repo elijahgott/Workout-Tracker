@@ -69,6 +69,7 @@
         </div>
     </header>
 
+    <!-- blur for adding workout -->
     <div id="workout-blur" class="absolute -z-10 top-0 h-full w-full opacity-0 scale-x-100 backdrop-blur-sm
     transition-all duration-500"></div>
     <!-- menu for adding a workout -->
@@ -81,7 +82,7 @@
                 md:text-xl
                 lg:text-2xl">Add Workout</h1>
             </div>
-            <button onclick="toggleWorkoutMenu()" class="h-12 w-12 ml-auto mr-0"><img src="../images/x.webp" /></button>
+            <button onclick="toggleWorkoutMenu()" class="mt-2 h-10 w-12 ml-auto mr-0 rounded-md border-2 border-neutral-200 hover:bg-neutral-200"><img src="../images/x.webp"/></button>
         </div>
         <div class="px-10 pt-6 mx-6">
             <form class="max-w-72">
@@ -136,6 +137,10 @@
             </form>
         </div>
     </div>
+
+    <!-- blur for editing profile -->
+    <div id="profile-blur" class="absolute -z-10 top-0 h-full w-full opacity-0 scale-x-100 backdrop-blur-sm
+    transition-all duration-500"></div>
     <!-- menu to edit profile -->
     <div id="edit-profile-menu" class="absolute z-20 top-1/2 -translate-y-1/2 scale-0 left-0 right-0 mx-auto w-fit h-fit p-4 bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500">
         <div class="flex"> 
@@ -146,7 +151,7 @@
                 md:text-xl
                 lg:text-2xl">Edit Profile</h1>
             </div>
-            <button onclick="toggleEditProfile()" class="h-12 w-12 ml-auto mr-0"><img src="../images/x.webp" /></button>
+            <button onclick="toggleEditProfile()" class="mt-2 h-10 w-12 ml-auto mr-0 rounded-md border-2 border-neutral-200 hover:bg-neutral-200"><img src="../images/x.webp"/></button>
         </div>
         <div class="px-10 pt-6 mx-6">
             <form class="max-w-72">
@@ -176,7 +181,7 @@
                 md:text-xl
                 lg:text-2xl">Edit Workout</h1>
             </div>
-            <button onclick="toggleEditWorkoutMenu()" class="h-12 w-12 ml-auto mr-0"><img src="../images/x.webp" /></button>
+            <button onclick="toggleEditWorkoutMenu()" class="mt-2 h-10 w-12 ml-auto mr-0 rounded-md border-2 border-neutral-200 hover:bg-neutral-200"><img src="../images/x.webp"/></button>
         </div>
         <div class="px-10 pt-6 mx-6">
             <form class="max-w-72">
@@ -229,6 +234,31 @@
                     lg:text-lg hover:bg-teal-500 hover:scale-105 hover:transition" data="workoutList" onclick="submitWorkout()">Submit</button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!-- delete workout confirmation menu -->
+    <div id="delete-workout-menu" class="absolute z-20 top-1/2 -translate-y-1/2 scale-0 left-0 right-0 mx-auto w-fit h-fit p-4 bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500">
+        <div class="flex"> 
+            <div class="h-12 w-12"></div> 
+            <div class="flex w-full justify-center">
+                <h1 class="font-bold pt-4
+                text-lg
+                md:text-xl
+                lg:text-2xl">Delete This Workout?</h1>
+            </div>
+            <button onclick="toggleDeleteWorkoutMenu()" class="mt-2 h-10 w-12 ml-auto mr-0 rounded-md border-2 border-neutral-200 hover:bg-neutral-200"><img src="../images/x.webp"/></button>
+        </div>
+        <div class="px-10 pt-6 mx-6">
+            <div class="mx-auto mb-4">
+                <h1 class="block text-lg font-semibold text-center">Workout Name</h1>
+            </div>
+            <div class="w-fit mx-auto pt-2">
+                <button class="text-white bg-red-400 border-2 border-red-500 rounded-md text-sm font-bold p-2 mb-2
+                hover:bg-red-500 hover:scale-105 hover:transition-all" onclick="deleteWorkout()">Delete</button>
+                <button class="bg-neutral-200 border-2 border-neutral-300 rounded-md text-sm font-semibold p-2 mb-2
+                hover:bg-neutral-300 hover:scale-105 hover:transition-all">Cancel</button>
+            </div>
         </div>
     </div>
 
@@ -270,7 +300,7 @@
                         <div id="optionsMenu1" class="hidden absolute right-2 bottom-12 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                             <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="optionsButton">
                                 <button onclick="toggleEditWorkoutMenu()" class="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-gray-100" role="menuitem">Edit Workout</button>
-                                <button onclick="deleteWorkout()" class="block w-full px-4 py-2 text-sm text-left text-red-600 hover:bg-red-100" role="menuitem">Delete Workout</button>
+                                <button onclick="toggleDeleteWorkoutMenu()" class="block w-full px-4 py-2 text-sm text-left text-red-600 hover:bg-red-100" role="menuitem">Delete Workout</button>
                             </div>
                         </div>
                     </div>
@@ -345,6 +375,6 @@
                 </div>
             </div>
         </div>
-    <script src="../script.js"></script>
+    <script src="./profile_script.js"></script>
 </body>
 </html>
