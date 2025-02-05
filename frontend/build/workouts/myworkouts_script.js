@@ -173,3 +173,22 @@ window.onclick = function(e) {
         })
     }
 };
+
+// !!workouts sent as string, cant parse name, exercises, etc
+//testing server -> workouts
+fetch('http://localhost:5000/api/workouts')
+    .then(response => response.text())
+    .then(data => {
+        console.log(typeof(data));
+        displayWorkouts(data)})
+    .catch(err => console.error('Error fetching data: ', err));
+
+function displayWorkouts(workouts){
+    const container = document.getElementById('workout-container');
+    container.innerHTML = `<h1 class="text-center">Loading Workouts...</h1>`;
+
+    workouts.forEach(workout => {
+        console.log(workout.name);
+        const workoutDiv = document.createElement('div');
+    });
+}

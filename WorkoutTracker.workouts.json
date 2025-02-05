@@ -21,4 +21,29 @@
     "Monday",
     "Thursday"
   ]
+},
+{
+  "_id": {
+    "$oid": "67a3de28eb78be3e058b0180"
+  },
+  "name": "Pull Day",
+  "exercises": [
+    {
+      "name": "Bench Pull",
+      "sets": 5,
+      "reps": 5,
+      "weight": 150
+    },
+    {
+      "name": "Triceps Pull",
+      "sets": 3,
+      "reps": 15,
+      "weight": 60
+    }
+  ],
+  "days": [
+    "Wednesday",
+    "Friday",
+    "Saturday"
+  ]
 }]
