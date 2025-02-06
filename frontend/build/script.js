@@ -59,7 +59,7 @@ window.onclick = function(e) {
 };
 
 //testing server -> index
-fetch('http://localhost:5000/')
+fetch('http://localhost:5000/api/')
     .then(response => response.text())
     .then(data => {
         console.log(data);

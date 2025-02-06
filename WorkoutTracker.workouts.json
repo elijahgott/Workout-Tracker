@@ -2,6 +2,8 @@
   "_id": {
     "$oid": "66f336791e2fe4b34d6f81a1"
   },
+  "uid" : 0,
+  "workout_num": 1,
   "name": "Push Day",
   "exercises": [
     {
@@ -15,6 +17,18 @@
       "sets": 3,
       "reps": 15,
       "weight": 60
+    },
+    {
+      "name": "Overhead Triceps Extension",
+      "sets": 3,
+      "reps": 8,
+      "weight": 60
+    },
+    {
+      "name": "Dumbbell Incline Bench",
+      "sets": 2,
+      "reps": 8,
+      "weight": 75
     }
   ],
   "days": [
@@ -26,6 +40,8 @@
   "_id": {
     "$oid": "67a3de28eb78be3e058b0180"
   },
+  "uid" : 0,
+  "workout_num": 2,
   "name": "Pull Day",
   "exercises": [
     {

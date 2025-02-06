@@ -4,5 +4,6 @@
   },
   "name": "test",
   "password": "test",
-  "email": "test"
+  "email": "test",
+  "uid" : 0
 }]

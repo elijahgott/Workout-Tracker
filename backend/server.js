@@ -34,6 +34,7 @@ app.get('/api/', (req, res) => {
 app.get('/api/workouts', async (req, res) => {
     try {
         const workouts = await Workout.find();
+        res.setHeader('Content-Type', 'application/json'); //force json
         res.json(workouts);
     } catch (err) {
         console.error(err);
