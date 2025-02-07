@@ -43,17 +43,27 @@ router.post('/createaccount', async (req, res) => {
 
 //logging in
 router.post('/login', async (req, res) => {
-    const {email, password} = req.body;
-    const user = await User.findOne({email});
+    try{
+        const {email, password} = req.body;
+        const user = await User.findOne({email});
 
-    if(!user || !(await bcrypt.compare(password, user.password))){
-        return res.status(401).json({error: 'Invalid Credentials.'});
+        if(!user || !(await bcrypt.compare(password, user.password))){
+            return res.status(401).json({error: 'Invalid Email or Password.'});
+        }
+
+        const token = jwt.sign(
+            {uid: user.uid, name: user.name, email: user.email},
+            process.env.JWT_SECRET,
+            {expiresIn: '7d'});
+        // res.cookie('token', token, {httpOnly: true, secure: false}); //!set secure: true in production
+        res.json({token, user: {uid: user.uid, name: user.name, email: user.email}});
+    
     }
-
-    const token = jwt.sign({userID: user.uid}, process.env.JWT_SECRET, {expiresIn: '7d'});
-    res.cookie('token', token, {httpOnly: true, secure: false}); //!set secure: true in production
-    res.json({message: 'Login Successful!'});
-});
+    catch(error){
+        console.error('Login Error: ', error);
+        res.status(500).json({error: 'Login Error.'});
+    }
+}); 
 
 //log out
 router.post('/logout', (req, res) => {

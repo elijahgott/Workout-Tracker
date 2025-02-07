@@ -10,6 +10,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
 const authRoutes = require('../backend/routes/authRoutes');
+const protectedRoutes = require('../backend/routes/protectedRoutes');
 
 dotenv.config();
 const app = express();
@@ -22,6 +23,7 @@ app.use(cookieParser());
 app.use(cors({origin: ['http://127.0.0.1:5500', 'http://localhost:5000'],
             credentials: true}));
 app.use('/api', authRoutes);
+app.use('/api', protectedRoutes);
 
 //connect to mongoDB database
 mongoose.connect(process.env.MONGO_URI, {

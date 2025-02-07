@@ -174,7 +174,6 @@ window.onclick = function(e) {
     }
 };
 
-// !!workouts sent as string, cant parse name, exercises, etc
 //testing server -> workouts
 fetch('http://localhost:5000/api/workouts')
     .then(response => response.text())
@@ -195,7 +194,7 @@ function displayWorkouts(workouts){
         //workout name
         const name = `<div class="flex relative text-center">
                         <h1 class="w-fit text-neutral-800 font-bold tracking-wider text-xl text-left pb-2 mr-2">${workout.name}</h1>
-                        <p class="text-neutral-500 text-sm h-fit mt-1">${workout.days.join(', ')}</p>
+                        <p class="text-neutral-500 text-sm h-fit mt-1.5">${workout.days.join(', ')}</p>
                         <button id="optionsButton" onclick="toggleOptionsMenu('optionsMenu4')" class="absolute z-0 items-center w-8 h-8 rounded-full bg-neutral-100 font-bold top-0 right-0
                         hover:border-2 hover:border-neutral-300"><img id="optionsButton" class="w-5 h-5 mx-auto" src="../images/horizontal-dots.webp"/></button>
                         <!-- 'edit' and 'delete' menu -->

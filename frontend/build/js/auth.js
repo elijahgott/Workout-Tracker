@@ -1,16 +1,13 @@
 async function checkAuth() {
-    const response = await fetch('http://localhost:5000/api/user', {
-        method: 'GET',
-        credentials: 'include' //send cookies
-    });
+    const token = localStorage.getItem('token');
+    const user = JSON.parse(localStorage.getItem('user'));
 
-    const data = await response.json();
-    if(response.ok){
-        document.getElementById('user-name').textContent = `${data.email}`;
-        document.getElementById('logout').style.display = 'block';
+    if(token && user){
+        document.getElementById('user-name').innerText = user.name;
+        document.getElementById('sign-out').style.display = 'block';
     }
     else{
-        document.getElementById('user-name').textContent = 'Guest';
+        window.location.href = './signin/signin.html';
     }
 }
 
