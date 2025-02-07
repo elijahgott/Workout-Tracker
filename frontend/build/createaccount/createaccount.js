@@ -25,6 +25,6 @@ document.getElementById('register-form').addEventListener('submit', async (e) =>
     }
     catch (error){
         console.error('Error: ', error);
-        alert('Cant do it');
+        alert('Unable to Create Account.');
     }
 });
