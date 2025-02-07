@@ -142,7 +142,7 @@
     <div id="profile-blur" class="absolute -z-10 top-0 h-full w-full opacity-0 scale-x-100 backdrop-blur-sm
     transition-all duration-500"></div>
     <!-- menu to edit profile -->
-    <div id="edit-profile-menu" class="absolute z-20 top-1/2 -translate-y-1/2 scale-0 left-0 right-0 mx-auto w-fit h-fit p-4 bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500">
+    <div id="edit-profile-menu" class="absolute z-20 top-1/2 -translate-y-1/2 scale-0 left-0 right-0 mx-auto max-w-[600px] h-fit p-4 bg-white border-2 border-neutral-200 shadow-md rounded-lg transition-all duration-500">
         <div class="flex"> 
             <div class="h-12 w-12"></div> 
             <div class="flex w-full justify-center">
@@ -154,13 +154,13 @@
             <button onclick="toggleEditProfile()" class="mt-2 h-10 w-12 ml-auto mr-0 rounded-md border-2 border-neutral-200 hover:bg-neutral-200"><img src="../images/x.webp"/></button>
         </div>
         <div class="px-10 pt-6 mx-6">
-            <form class="max-w-72">
+            <form>
                 <div class="mx-auto mb-4">
                     <input id="user-name" name="user-name" placeholder="Enter New Name" type="text" class="border-2 border-neutral-400 rounded-md mb-2
                     h-8 w-full px-2
                     md:h-10">
-                    <label for="user-photo" class="pr-2">Select Photo:</label>
-                    <input id="user-photo" name="user-photo" type="file" class="pt-2 h-8 w-full
+                    <label for="user-photo" class="pr-2 my-1">Select Photo:</label>
+                    <input id="user-photo" name="user-photo" type="file" class="py-2 h-8
                     md:h-10">
                 </div>
                 <div class="flex">
