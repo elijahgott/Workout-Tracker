@@ -2,7 +2,7 @@
 
 module.exports = {
   content: [
-    './build/*.html',
+    './build/index/*.html',
     './build/workouts/*.html',
     './build/profile/*.html',
     './build/signin/*.html',

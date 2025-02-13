@@ -174,6 +174,42 @@ window.onclick = function(e) {
     }
 };
 
+//add new rows to add/edit workout menus
+document.getElementById('newexercise').addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const container = document.getElementById('exercise-container');
+
+    const newRow = document.createElement('div');
+
+    newRow.innerHTML = `
+        <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
+        h-8 w-full px-2
+        md:h-10">
+        <div class="flex py-2 relative">
+            <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
+            h-8 w-1/3 px-2
+            md:h-10">
+            <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
+            <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
+            h-8 w-1/3 px-2
+            md:h-10">
+            <button id="removeexercise" class="removeexercise absolute -right-12 -top-4 h-10 w-10"><img class="removeexercise" src="../images/x.webp"></button>
+        </div>
+    `;
+
+    container.appendChild(newRow);
+});
+//remove rows from workout menu
+document.getElementById('exercise-container').addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    console.log(event.target)
+    if(event.target.classList.contains('removeexercise')){
+        event.target.parentElement.parentElement.parentElement.remove(); //removes exercise name, # of sets, # of reps (SLOPPY)
+    }
+})
+
 //testing server -> workouts
 fetch('http://localhost:5000/api/workouts')
     .then(response => response.text())
