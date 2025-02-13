@@ -1,6 +1,3 @@
-//general vars
-var pathname = window.location.pathname;
-
 //toggle mobile nav 
 const showMobileNav = document.querySelector('#show-mobile-nav');
 const mobileNav = document.querySelector('#mobile-nav');

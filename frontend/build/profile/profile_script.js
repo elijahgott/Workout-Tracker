@@ -175,6 +175,82 @@ window.onclick = function(e) {
     }
 };
 
+//add new rows to add workout menu
+const newExerciseAdd = document.querySelector('#new-exercise-add');
+newExerciseAdd.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const container = document.querySelector('#exercise-container-add');
+
+    const newRow = document.createElement('div');
+
+    newRow.innerHTML = `
+        <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
+        h-8 w-full px-2
+        md:h-10">
+        <div class="flex py-2 relative">
+            <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
+            h-8 w-1/3 px-2
+            md:h-10">
+            <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
+            <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
+            h-8 w-1/3 px-2
+            md:h-10">
+            <button id="remove-exercise" class="remove-exercise absolute -right-12 -top-4 h-10 w-10"><img class="remove-exercise" src="../images/x.webp"></button>
+        </div>
+    `;
+
+    container.appendChild(newRow);
+});
+
+//remove rows from add workout menu
+const removeExerciseAdd = document.querySelector('#exercise-container-add');
+removeExerciseAdd.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    if(event.target.classList.contains('remove-exercise')){
+        event.target.parentElement.parentElement.parentElement.remove(); //removes exercise name, # of sets, # of reps (SLOPPY)
+    }
+});
+
+//add new rows to edit workout menu
+const newExerciseEdit = document.querySelector('#new-exercise-edit');
+newExerciseEdit.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const container = document.querySelector('#exercise-container-edit');
+
+    const newRow = document.createElement('div');
+
+    newRow.innerHTML = `
+        <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
+        h-8 w-full px-2
+        md:h-10">
+        <div class="flex py-2 relative">
+            <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
+            h-8 w-1/3 px-2
+            md:h-10">
+            <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
+            <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
+            h-8 w-1/3 px-2
+            md:h-10">
+            <button id="remove-exercise" class="remove-exercise absolute -right-12 -top-4 h-10 w-10"><img class="remove-exercise" src="../images/x.webp"></button>
+        </div>
+    `;
+
+    container.appendChild(newRow);
+});
+
+//remove rows from edit workout menu
+const removeExerciseEdit = document.querySelector('#exercise-container-edit');
+removeExerciseEdit.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    if(event.target.classList.contains('remove-exercise')){
+        event.target.parentElement.parentElement.parentElement.remove(); //removes exercise name, # of sets, # of reps (SLOPPY, but works)
+    }
+});
+
 //toggle menu to edit profile picture or name
 const profileBlur = document.querySelector('#profile-blur');
 const profileWorkoutBlur = document.querySelector('#workout-blur');

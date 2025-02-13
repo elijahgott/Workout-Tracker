@@ -112,23 +112,40 @@
                         <label for="saturday" class="pr-1">Sat:</label>
                         <input type="checkbox" value="saturday" name="saturday" class="mr-2">
                 </div>
-                <div class="flex flex-wrap w-fit mx-auto mb-4">
-                    <h1 class="mx-auto text-lg pb-2 font-bold">Exercises</h1>
-                    <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
-                    h-8 w-full px-2
-                    md:h-10">
-                    <div class="flex pt-2">
-                        <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
-                        h-8 w-1/3 px-2
+                <h1 class="flex flex-wrap w-fit mx-auto mb-4 text-lg pb-2 font-bold">Exercises</h1>
+                <div id="exercise-container-add">
+                    <div>
+                        <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
+                        h-8 w-full px-2
                         md:h-10">
-                        <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
-                        <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
-                        h-8 w-1/3 px-2
+                        <div class="flex py-2 relative">
+                            <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                            <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
+                            <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                        </div>
+                    </div>
+                    <div>
+                        <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
+                        h-8 w-full px-2
                         md:h-10">
+                        <div class="flex py-2 relative">
+                            <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                            <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
+                            <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                            <button id="remove-exercise" class="remove-exercise absolute -right-12 -top-4 h-10 w-10"><img class="remove-exercise" src="../images/x.webp"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="w-fit mx-auto">
-                    <button class="bg-neutral-200 border-2 border-neutral-300 rounded-md text-sm font-semibold p-2 mb-2
+                    <button id="new-exercise-add" class="bg-neutral-200 border-2 border-neutral-300 rounded-md text-sm font-semibold p-2 mb-2
                     hover:bg-neutral-300 hover:scale-105 hover:transition-all">+ New Exercise</button>
                 </div>
                 <div class="w-fit mx-auto pb-6">
@@ -211,23 +228,40 @@
                         <label for="saturday" class="pr-1">Sat:</label>
                         <input type="checkbox" value="saturday" name="saturday" class="mr-2">
                 </div>
-                <div class="flex flex-wrap w-fit mx-auto mb-4">
-                    <h1 class="mx-auto text-lg pb-2 font-bold">Exercises</h1>
-                    <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
-                    h-8 w-full px-2
-                    md:h-10">
-                    <div class="flex pt-2">
-                        <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
-                        h-8 w-1/3 px-2
+                <h1 class="flex flex-wrap w-fit mx-auto mb-4 text-lg pb-2 font-bold">Exercises</h1>
+                <div id="exercise-container-edit">
+                    <div>
+                        <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
+                        h-8 w-full px-2
                         md:h-10">
-                        <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
-                        <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
-                        h-8 w-1/3 px-2
+                        <div class="flex py-2 relative">
+                            <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                            <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
+                            <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                        </div>
+                    </div>
+                    <div>
+                        <input id="exercise-name" name="exercise-name" placeholder="Enter Exercise Name" type="text" class="border-2 border-neutral-400 rounded-md
+                        h-8 w-full px-2
                         md:h-10">
+                        <div class="flex py-2 relative">
+                            <input id="num-sets" name="num-sets" placeholder="# of Sets" type="number" class="border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                            <p class="w-1/3 leading-8 text-lg text-center font-semibold justify-center">x</p>
+                            <input id="num-reps" name="num-reps" placeholder="# of Reps" type="number" class="mr-0 ml-auto border-2 border-neutral-400 rounded-md
+                            h-8 w-1/3 px-2
+                            md:h-10">
+                            <button id="remove-exercise" class="remove-exercise absolute -right-12 -top-4 h-10 w-10"><img class="remove-exercise" src="../images/x.webp"></button>
+                        </div>
                     </div>
                 </div>
                 <div class="w-fit mx-auto">
-                    <button class="bg-neutral-200 border-2 border-neutral-300 rounded-md text-sm font-semibold p-2 mb-2
+                    <button id="new-exercise-edit" class="bg-neutral-200 border-2 border-neutral-300 rounded-md text-sm font-semibold p-2 mb-2
                     hover:bg-neutral-300 hover:scale-105 hover:transition-all">+ New Exercise</button>
                 </div>
                 <div class="w-fit mx-auto pb-6">
