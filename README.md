@@ -7,29 +7,33 @@ This application is for tracking one's progress in the gym. This is done by trac
 - Create a workout schedule
     - Ex. Monday -> Push day, Tuesday -> Pull day, etc.
 - Track weight, sets, reps for each workout
-- Track time / pace for cardio workouts
+- Track time / pace for cardio workouts?
 
 ### Possible Features:
 - Accounts for each user
     - Add friends, change profile picture, etc
-- Track meals / calories
 
 ### To Do:
-- Website:
-    - Add menu to edit profile name / picture
-- Database:
-    - Make
-
 - Database:
     - MongoDB
+
     - User
+        - UID
         - Username
-        - UID?
+        - Email
         - Password hash?
-    - Workout Sets
-        - Workouts
-        - Associated Day(s)?
+
     - Workouts
+        - UID
+        - Exercises
+            - Exercise Name
+            - Sets
+            - Reps
+        - Associated Day(s)?
+
+    - Completed Workouts
+        - UID
+        - Name
         - Sets
         - Reps
         - Weight

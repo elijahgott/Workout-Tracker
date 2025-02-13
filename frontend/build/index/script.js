@@ -59,7 +59,6 @@ window.onclick = function(e) {
 fetch('http://localhost:5000/api/')
     .then(response => response.text())
     .then(data => {
-        console.log(data);
         const container = document.getElementById('data-container');
         container.innerHTML = `<p class="text-red-500">${data}</p>`;
     })
@@ -67,5 +66,5 @@ fetch('http://localhost:5000/api/')
         console.error('Error fetching data: ', err);
         
         const container = document.getElementById('data-container');
-        container.innerHTML = `<p>Failed to load content! ${err}</p>`;
+        container.innerHTML = `<p>Failed to load swag! ${err}</p>`;
     });

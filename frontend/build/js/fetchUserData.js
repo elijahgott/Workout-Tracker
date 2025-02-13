@@ -14,14 +14,13 @@ async function fetchUserData() {
         });
 
         const data = await response.json();
-        console.log(data);
 
         if(response.ok){
             document.querySelectorAll('#username').forEach((element) => {
                 element.innerText = data.user.name;
             })
         }
-        else{
+        else{ //i don think this code is ever runned ran run
             alert('Session Expired, Please Log In.');
             localStorage.removeItem('token');
             localStorage.removeItem('user');
@@ -29,6 +28,9 @@ async function fetchUserData() {
         }
     }
     catch (error){
+        document.querySelectorAll('#username').forEach((element) => {
+            element.innerText = 'Guest';
+        });
         console.error('Error fetching user: ', error);
     }
 }
