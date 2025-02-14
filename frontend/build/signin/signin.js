@@ -18,7 +18,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
             localStorage.setItem('user', JSON.stringify(data.user));
 
             alert('Login Successful!');
-            window.location.href = '../index.html';
+            window.location.href = '../index/index.html';
         }
         else{
             alert(data.error);

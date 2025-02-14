@@ -1,0 +1,57 @@
+[{
+    "_id": {
+      "$oid": "66f336791e2fe4b34d6f81a2"
+    },
+    "uid" : "536cbb6f-d6c7-49df-87d4-3ef0268799c2",
+    "name": "Push Day",
+    "exercises": [
+      {
+        "name": "Bench Press",
+        "sets": 5,
+        "reps": 5,
+        "weight": 215
+      },
+      {
+        "name": "Triceps Extension",
+        "sets": 3,
+        "reps": 15,
+        "weight": 50
+      },
+      {
+        "name": "Overhead Triceps Extension",
+        "sets": 3,
+        "reps": 8,
+        "weight": 45
+      },
+      {
+        "name": "Dumbbell Incline Bench",
+        "sets": 2,
+        "reps": 8,
+        "weight": 45
+      }
+    ],
+    "date": "2/14/2025"
+  },
+  {
+    "_id": {
+      "$oid": "67a3de28eb78be3e058b0180"
+    },
+    "uid" : "536cbb6f-d6c7-49df-87d4-3ef0268799c2",
+    "name": "Pull Day",
+    "exercises": [
+      {
+        "name": "Bench Pull",
+        "sets": 5,
+        "reps": 5,
+        "weight": 215
+      },
+      {
+        "name": "Triceps Pull",
+        "sets": 3,
+        "reps": 15,
+        "weight": 215
+      }
+    ],
+    "date": "2/14/2025"
+  }]
+  

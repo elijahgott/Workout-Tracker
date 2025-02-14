@@ -2,8 +2,8 @@
   "_id": {
     "$oid": "66f335831e2fe4b34d6f819e"
   },
+  "uid" : "536cbb6f-d6c7-49df-87d4-3ef0268799c2",
   "name": "test",
   "password": "test",
-  "email": "test",
-  "uid" : 0
+  "email": "test"
 }]

@@ -86,7 +86,7 @@ router.get('/user', (req, res) => {
 /* WEBPAGE SPECIFIC */
 //index page route
 router.get('/', (req, res) => {
-    res.json('Fortnite battle pass is gay');
+    res.json('Fortnite battle pass is swag!');
 });
 
 //workouts page
