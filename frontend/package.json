@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --minify",
+    "build": "npx ./node_modules/.bin/tailwindcss -i ./src/input.css -o ./build/css/style.css --minify",
     "postinstall": "npm install tailwindcss postcss autoprefixer"
   },
   "keywords": [],
