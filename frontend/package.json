@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "tailwind.config.js",
+  "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --minify",
     "postinstall": "npm install tailwindcss postcss autoprefixer"
