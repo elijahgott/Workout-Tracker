@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./frontend/src/input.css -o ./frontend/build/css/style.css",
-    "postinstall": "npm install tailwindcss postcss autoprefixer"
+    "build": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css"
   },
   "keywords": [],
   "author": "",
