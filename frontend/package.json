@@ -10,11 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.14",
     "npx": "^10.2.2"
   },
   "devDependencies": {
-    "npx": "^10.2.2",
-    "tailwindcss": "^4.0.14"
+    "npx": "^10.2.2"
   }
 }
