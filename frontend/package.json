@@ -10,12 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "npx": "^10.2.2"
+    "npx": "^10.2.2",
+    "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
     "npx": "^10.2.2",
-    "postcss": "^8.5.3",
     "tailwindcss": "^4.0.14"
   }
 }
