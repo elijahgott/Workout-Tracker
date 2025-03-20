@@ -3,7 +3,7 @@ async function fetchUserData() {
 
     if(!token){
         console.error('No Token Found.')
-        window.location.href = '../signin/signin.html';
+        // window.location.href = '../signin/signin.html'; //!commented out for vercel
         return;
     }
 
@@ -24,7 +24,7 @@ async function fetchUserData() {
             alert('Session Expired, Please Log In.');
             localStorage.removeItem('token');
             localStorage.removeItem('user');
-            window.location.href = '../signin/signin.html';
+            // window.location.href = '../signin/signin.html'; //!commented out for vercel
         }
     }
     catch (error){

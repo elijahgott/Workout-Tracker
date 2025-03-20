@@ -7,7 +7,7 @@ async function checkAuth() {
         document.getElementById('sign-out').style.display = 'block';
     }
     else{
-        window.location.href = './signin/signin.html';
+        // window.location.href = './signin/signin.html'; //!commented out for vercel
     }
 }
 
@@ -20,7 +20,7 @@ async function checkProtectedRoute() {
     });
 
     if(response.ok){
-        window.location.href = './login.html'; //redirect if not signed in
+        // window.location.href = './login.html'; //redirect if not signed in //!commented out for vercel
     }
 }
 

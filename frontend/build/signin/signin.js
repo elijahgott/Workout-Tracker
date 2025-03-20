@@ -29,3 +29,8 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
         alert('Mannnn')
     }
 });
+
+const forgotPassword = document.getElementById('forgotPassword');
+forgotPassword.addEventListener('click', () =>{
+    alert('I haven\'t implemented this yet. My bad.');
+})
